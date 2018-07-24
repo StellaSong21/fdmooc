@@ -7,10 +7,13 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<form action="Servlet">
+    <input type="submit" value="submit">
+</form>
+</body>
 </html>
