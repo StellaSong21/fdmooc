@@ -1,16 +1,16 @@
 package dao;
 
-import entity.User;
+import entity.UserBean;
 
 import java.util.List;
 import java.util.Map;
 
 public interface UserDAO {
-    int append(User user);
+    int append(UserBean user);
 
     int delete(int id);
 
-    int modify(User user);
+    int modify(UserBean user);
 
-    List<Map<String, String>> infoList(User user);
+    List<Map<String, String>> infoList(UserBean user);
 }
