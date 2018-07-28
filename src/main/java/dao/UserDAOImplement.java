@@ -12,15 +12,17 @@ import java.util.List;
 import java.util.Map;
 
 public class UserDAOImplement implements UserDAO {
-    public int append(UserBean user) {
+    @Override
+    public int append(UserBean userBean) {
         Connection conn = DbUtil.getConnecction();
         try {
-            String sql = "insert into 'fdmooc'.'user' ('username','nickname','password','authority','email') values ('" +
-                    user.getUsername() + "','" + user.getNickname() + "','" + user.getPassword() + "','" + user.getAuthority() + "','" + user.getEmail() + "');";
+            String sql = "INSERT INTO `fdmooc`.`user` (username,nickname,password,authority,email) VALUES ('" +
+                    userBean.getUsername() + "','" + userBean.getNickname() + "','" + userBean.getPassword() + "','" + userBean.getAuthority()
+                    + "','" + userBean.getEmail() + "')";
+
             PreparedStatement ps = conn.prepareStatement(sql);
             int re = ps.executeUpdate();
-            if (DbUtil.closeConnection(conn) == -1)
-                return -1;
+            DbUtil.closeConnection();
             return re;
         } catch (Exception e) {
             e.printStackTrace();
@@ -28,14 +30,14 @@ public class UserDAOImplement implements UserDAO {
         }
     }
 
-    public int delete(int id) {
+    @Override
+    public int delete(String uid) {
         Connection conn = DbUtil.getConnecction();
         try {
-            String sql = " delete from 'fdmooc'.'user' where 'uid'='" + id + "');";
+            String sql = "DELETE FROM `fdmooc`.`user` WHERE uid='" + uid + "'";
             PreparedStatement ps = conn.prepareStatement(sql);
             int re = ps.executeUpdate();
-            if (DbUtil.closeConnection(conn) == -1)
-                return -1;
+            DbUtil.closeConnection();
             return re;
         } catch (Exception e) {
             e.printStackTrace();
@@ -43,52 +45,63 @@ public class UserDAOImplement implements UserDAO {
         }
     }
 
-    public int modify(UserBean user) {
+    @Override
+    public int modify(UserBean userBean) {
         Connection conn = DbUtil.getConnecction();
         try {
-            String sql = "UPDATE 'fdmooc'.'user' SET username=?, nickname=?, password=?, authority=?, email=? WHERE uid=?";
-            PreparedStatement ppst = conn.prepareStatement(sql);
-            ppst.setString(6, user.getUid());
-            ppst.setString(1, user.getUsername());
-            ppst.setString(2, user.getNickname());
-            ppst.setString(3, user.getPassword());
-            ppst.setString(4, user.getAuthority());
-            ppst.setString(5, user.getEmail());
-
-            PreparedStatement ps = conn.prepareStatement(sql);
-            int re = ps.executeUpdate();
-            if (DbUtil.closeConnection(conn) == -1)
-                return -1;
-            return re;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return -1;
-        }
-    }
-
-    public List<Map<String, String>> infoList(UserBean user) {
-        Connection conn = DbUtil.getConnecction();
-        try {
-            String sql = "select from 'fdmooc'.'user' where";
+            String sql = "UPDATE `fdmooc`.`user` SET ";
             String match = "";
-            if (!user.getUid().isEmpty())
-                match += "and uid='" + user.getUid() + "' ";
-            if (!user.getUsername().isEmpty())
-                match += "and usename='" + user.getUsername() + "' ";
-            if (!user.getNickname().isEmpty())
-                match += "and nickname='" + user.getNickname() + "' ";
-            if (!user.getPassword().isEmpty())
-                match += "and password='" + user.getPassword() + "' ";
-            if (!user.getAuthority().isEmpty())
-                match += "and authority='" + user.getAuthority() + "' ";
-            if (!user.getEmail().isEmpty())
-                match += "and email='" + user.getEmail() + "' ";
+            if (!userBean.getUsername().isEmpty())
+                match += ", username='" + userBean.getUsername() + "' ";
+            if (!userBean.getNickname().isEmpty())
+                match += ", nickname='" + userBean.getNickname() + "' ";
+            if (!userBean.getPassword().isEmpty())
+                match += ", password='" + userBean.getPassword() + "' ";
+            if (!userBean.getAuthority().isEmpty())
+                match += ", authority='" + userBean.getAuthority() + "' ";
+            if (!userBean.getEmail().isEmpty())
+                match += ", email='" + userBean.getEmail() + "' ";
+
             if (!match.isEmpty())
-                sql += match.substring(3);
-            PreparedStatement ps = conn.prepareStatement(sql + ";");
-            ResultSet re = ps.executeQuery();
-            if (DbUtil.closeConnection(conn) == -1)
-                return null;
+                sql += match.substring(1);
+            sql += "WHERE uid='" + userBean.getUid() + "'";
+
+            PreparedStatement ppst = conn.prepareStatement(sql);
+
+
+            int re = ppst.executeUpdate();
+            DbUtil.closeConnection();
+            return re;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return -1;
+        }
+    }
+
+    @Override
+    public List<Map<String, String>> infoList(UserBean userBean) {
+        Connection conn = DbUtil.getConnecction();
+        try {
+            String sql = "SELECT * FROM `fdmooc`.`user` ";
+            String match = "";
+            if (!userBean.getUid().isEmpty())
+                match += "AND uid='" + userBean.getUid() + "' ";
+            if (!userBean.getUsername().isEmpty())
+                match += "AND username='" + userBean.getUsername() + "' ";
+            if (!userBean.getNickname().isEmpty())
+                match += "AND nickname='" + userBean.getNickname() + "' ";
+            if (!userBean.getPassword().isEmpty())
+                match += "AND password='" + userBean.getPassword() + "' ";
+            if (!userBean.getAuthority().isEmpty())
+                match += "AND authority='" + userBean.getAuthority() + "' ";
+            if (!userBean.getEmail().isEmpty())
+                match += "AND email='" + userBean.getEmail() + "' ";
+            if (!match.isEmpty())
+                sql += "WHERE " + match.substring(3);
+
+            PreparedStatement ppst = conn.prepareStatement(sql);
+            ResultSet re = ppst.executeQuery();
+            DbUtil.closeConnection();
             List<Map<String, String>> result = new ArrayList<>();
             while (re.next()) {
                 Map<String, String> map = new HashMap<>();

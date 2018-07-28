@@ -6,11 +6,11 @@ import java.util.List;
 import java.util.Map;
 
 public interface UserDAO {
-    int append(UserBean user);
+    int append(UserBean userBean);
 
-    int delete(int id);
+    int delete(String uid);
 
-    int modify(UserBean user);
+    int modify(UserBean userBean);
 
-    List<Map<String, String>> infoList(UserBean user);
+    List<Map<String, String>> infoList(UserBean userBean);
 }
