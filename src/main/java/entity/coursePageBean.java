@@ -1,6 +1,6 @@
 package entity;
 
-public class Course_pageBean {
+public class coursePageBean {
     private String pid;
     private String cid;
     private String number;
@@ -8,10 +8,10 @@ public class Course_pageBean {
     private String content;
     private String url;
 
-    public Course_pageBean() {
+    public coursePageBean() {
     }
 
-    public Course_pageBean(String cid, String number, String title, String content, String url) {
+    public coursePageBean(String cid, String number, String title, String content, String url) {
         this.cid = cid;
         this.number = number;
         this.title = title;
@@ -19,7 +19,7 @@ public class Course_pageBean {
         this.url = url;
     }
 
-    public Course_pageBean(String pid, String cid, String number, String title, String content, String url) {
+    public coursePageBean(String pid, String cid, String number, String title, String content, String url) {
         this.pid = pid;
         this.cid = cid;
         this.number = number;

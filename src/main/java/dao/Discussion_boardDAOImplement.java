@@ -1,6 +1,6 @@
 package dao;
 
-import entity.Discussion_boardBean;
+import entity.discussionBoardBean;
 import util.DbUtil;
 
 import java.sql.Connection;
@@ -13,14 +13,14 @@ import java.util.Map;
 
 public class Discussion_boardDAOImplement implements Discussion_boardDAO {
     @Override
-    public int append(Discussion_boardBean discussion_boardBean) {
+    public int append(discussionBoardBean discussionBoardBean) {
         Connection conn = DbUtil.getConnecction();
         try {
             String sql = "INSERT INTO `fdmooc`.`discussion_board` (content,`time`,uid) VALUES (?, ?, ?)";
             PreparedStatement ppst = conn.prepareStatement(sql);
-            ppst.setString(1, discussion_boardBean.getContent());
-            ppst.setString(2, discussion_boardBean.getTime());
-            ppst.setString(3, discussion_boardBean.getUid());
+            ppst.setString(1, discussionBoardBean.getContent());
+            ppst.setString(2, discussionBoardBean.getTime());
+            ppst.setString(3, discussionBoardBean.getUid());
 
             int re = ppst.executeUpdate();
             DbUtil.closeConnection();
@@ -47,22 +47,22 @@ public class Discussion_boardDAOImplement implements Discussion_boardDAO {
     }
 
     @Override
-    public int modify(Discussion_boardBean discussion_boardBean) {
+    public int modify(discussionBoardBean discussionBoardBean) {
         Connection conn = DbUtil.getConnecction();
         try {
             String sql = "UPDATE `fdmooc`.`discussion_board` SET ";
             String match = "";
-            if (!discussion_boardBean.getContent().isEmpty())
-                match += ", content='" + discussion_boardBean.getContent() + "' ";
-            if (!discussion_boardBean.getTime().isEmpty())
-                match += ", time='" + discussion_boardBean.getTime() + "' ";
-            if (!discussion_boardBean.getUid().isEmpty())
-                match += ", uid='" + discussion_boardBean.getUid() + "' ";
+            if (!discussionBoardBean.getContent().isEmpty())
+                match += ", content='" + discussionBoardBean.getContent() + "' ";
+            if (!discussionBoardBean.getTime().isEmpty())
+                match += ", time='" + discussionBoardBean.getTime() + "' ";
+            if (!discussionBoardBean.getUid().isEmpty())
+                match += ", uid='" + discussionBoardBean.getUid() + "' ";
 
             if (!match.isEmpty())
                 sql += match.substring(1);
 
-            sql += "WHERE did='" + discussion_boardBean.getDid() + "'";
+            sql += "WHERE did='" + discussionBoardBean.getDid() + "'";
 
             PreparedStatement ppst = conn.prepareStatement(sql);
             int re = ppst.executeUpdate();
@@ -75,19 +75,19 @@ public class Discussion_boardDAOImplement implements Discussion_boardDAO {
     }
 
     @Override
-    public List<Map<String, String>> infoList(Discussion_boardBean discussion_boardBean) {
+    public List<Map<String, String>> infoList(discussionBoardBean discussionBoardBean) {
         Connection conn = DbUtil.getConnecction();
         try {
             String sql = "SELECT * FROM `fdmooc`.`discussion_board` ";
             String match = "";
-            if (!discussion_boardBean.getDid().isEmpty())
-                match += "AND did='" + discussion_boardBean.getDid() + "' ";
-            if (!discussion_boardBean.getContent().isEmpty())
-                match += "AND content='" + discussion_boardBean.getContent() + "' ";
-            if (!discussion_boardBean.getTime().isEmpty())
-                match += "AND time='" + discussion_boardBean.getTime() + "' ";
-            if (!discussion_boardBean.getUid().isEmpty())
-                match += "AND uid='" + discussion_boardBean.getUid() + "' ";
+            if (!discussionBoardBean.getDid().isEmpty())
+                match += "AND did='" + discussionBoardBean.getDid() + "' ";
+            if (!discussionBoardBean.getContent().isEmpty())
+                match += "AND content='" + discussionBoardBean.getContent() + "' ";
+            if (!discussionBoardBean.getTime().isEmpty())
+                match += "AND time='" + discussionBoardBean.getTime() + "' ";
+            if (!discussionBoardBean.getUid().isEmpty())
+                match += "AND uid='" + discussionBoardBean.getUid() + "' ";
 
             if (!match.isEmpty())
                 sql += "WHERE " + match.substring(3);

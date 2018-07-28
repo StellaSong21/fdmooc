@@ -1,22 +1,22 @@
 package entity;
 
-public class Discussion_boardBean {
+public class discussionBoardBean {
     private String did;
     private String content;
     private String time;
     private String uid;
 
-    public Discussion_boardBean() {
+    public discussionBoardBean() {
     }
 
-    public Discussion_boardBean(String did, String content, String time, String uid) {
+    public discussionBoardBean(String did, String content, String time, String uid) {
         this.did = did;
         this.content = content;
         this.time = time;
         this.uid = uid;
     }
 
-    public Discussion_boardBean(String content, String time, String uid) {
+    public discussionBoardBean(String content, String time, String uid) {
         this.content = content;
         this.time = time;
         this.uid = uid;

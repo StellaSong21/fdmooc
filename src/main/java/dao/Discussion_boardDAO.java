@@ -1,16 +1,16 @@
 package dao;
 
-import entity.Discussion_boardBean;
+import entity.discussionBoardBean;
 
 import java.util.List;
 import java.util.Map;
 
 public interface Discussion_boardDAO {
-    int append(Discussion_boardBean discussion_boardBean);
+    int append(discussionBoardBean discussionBoardBean);
 
     int delete(String did);
 
-    int modify(Discussion_boardBean discussion_boardBean);
+    int modify(discussionBoardBean discussionBoardBean);
 
-    List<Map<String, String>> infoList(Discussion_boardBean discussion_boardBean);
+    List<Map<String, String>> infoList(discussionBoardBean discussionBoardBean);
 }

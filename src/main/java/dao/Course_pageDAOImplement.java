@@ -1,6 +1,6 @@
 package dao;
 
-import entity.Course_pageBean;
+import entity.coursePageBean;
 import util.DbUtil;
 
 import java.sql.Connection;
@@ -14,16 +14,16 @@ import java.util.Map;
 public class Course_pageDAOImplement implements Course_pageDAO {
     //增加，url可以为空
     @Override
-    public int append(Course_pageBean course_pageBean) {
+    public int append(coursePageBean coursePageBean) {
         Connection conn = DbUtil.getConnecction();
         try {
             String sql = "INSERT INTO `fdmooc`.`course_page` (cid,`number`,title,content,url) VALUES ('" +
-                    course_pageBean.getCid() + "','" + course_pageBean.getNumber() + "','" + course_pageBean.getTitle() + "','" +
-                    course_pageBean.getContent() + "', ";
-            if (course_pageBean.getUrl().isEmpty()) {
+                    coursePageBean.getCid() + "','" + coursePageBean.getNumber() + "','" + coursePageBean.getTitle() + "','" +
+                    coursePageBean.getContent() + "', ";
+            if (coursePageBean.getUrl().isEmpty()) {
                 sql += null + ")";
             } else {
-                sql += "'" + course_pageBean.getUrl() + "')";
+                sql += "'" + coursePageBean.getUrl() + "')";
             }
             PreparedStatement ppst = conn.prepareStatement(sql);
             int re = ppst.executeUpdate();
@@ -53,27 +53,27 @@ public class Course_pageDAOImplement implements Course_pageDAO {
 
     //修改，传bean对象，pid作为条件
     @Override
-    public int modify(Course_pageBean course_pageBean) {
+    public int modify(coursePageBean coursePageBean) {
         Connection conn = DbUtil.getConnecction();
         try {
             String sql = "UPDATE `fdmooc`.`course_page` SET ";
             String match = "";
-            if (!course_pageBean.getCid().isEmpty())
-                match += ", cid='" + course_pageBean.getCid() + "' ";
-            if (!course_pageBean.getNumber().isEmpty())
-                match += ", number='" + course_pageBean.getNumber() + "' ";
-            if (!course_pageBean.getTitle().isEmpty())
-                match += ", title='" + course_pageBean.getTitle() + "' ";
-            if (!course_pageBean.getContent().isEmpty())
-                match += ", content='" + course_pageBean.getContent() + "' ";
-            if (!course_pageBean.getUrl().isEmpty())
-                match += ", url='" + course_pageBean.getUrl() + "' ";
+            if (!coursePageBean.getCid().isEmpty())
+                match += ", cid='" + coursePageBean.getCid() + "' ";
+            if (!coursePageBean.getNumber().isEmpty())
+                match += ", number='" + coursePageBean.getNumber() + "' ";
+            if (!coursePageBean.getTitle().isEmpty())
+                match += ", title='" + coursePageBean.getTitle() + "' ";
+            if (!coursePageBean.getContent().isEmpty())
+                match += ", content='" + coursePageBean.getContent() + "' ";
+            if (!coursePageBean.getUrl().isEmpty())
+                match += ", url='" + coursePageBean.getUrl() + "' ";
 
             if (!match.isEmpty()) {
                 sql += match.substring(1);
             }
 
-            sql += "WHERE pid='" + course_pageBean.getPid() + "'";
+            sql += "WHERE pid='" + coursePageBean.getPid() + "'";
 
             PreparedStatement ppst = conn.prepareStatement(sql);
             int re = ppst.executeUpdate();
@@ -87,23 +87,23 @@ public class Course_pageDAOImplement implements Course_pageDAO {
 
     //查找
     @Override
-    public List<Map<String, String>> infoList(Course_pageBean course_pageBean) {
+    public List<Map<String, String>> infoList(coursePageBean coursePageBean) {
         Connection conn = DbUtil.getConnecction();
         try {
             String sql = "SELECT * FROM `fdmooc`.`course_page` ";
             String match = "";
-            if (!course_pageBean.getPid().isEmpty())
-                match += "AND pid='" + course_pageBean.getPid() + "' ";
-            if (!course_pageBean.getCid().isEmpty())
-                match += "AND cid='" + course_pageBean.getCid() + "' ";
-            if (!course_pageBean.getNumber().isEmpty())
-                match += "AND number='" + course_pageBean.getNumber() + "' ";
-            if (!course_pageBean.getTitle().isEmpty())
-                match += "AND title='" + course_pageBean.getTitle() + "' ";
-            if (!course_pageBean.getContent().isEmpty())
-                match += "AND content='" + course_pageBean.getContent() + "' ";
-            if (!course_pageBean.getUrl().isEmpty())
-                match += "AND url='" + course_pageBean.getUrl() + "' ";
+            if (!coursePageBean.getPid().isEmpty())
+                match += "AND pid='" + coursePageBean.getPid() + "' ";
+            if (!coursePageBean.getCid().isEmpty())
+                match += "AND cid='" + coursePageBean.getCid() + "' ";
+            if (!coursePageBean.getNumber().isEmpty())
+                match += "AND number='" + coursePageBean.getNumber() + "' ";
+            if (!coursePageBean.getTitle().isEmpty())
+                match += "AND title='" + coursePageBean.getTitle() + "' ";
+            if (!coursePageBean.getContent().isEmpty())
+                match += "AND content='" + coursePageBean.getContent() + "' ";
+            if (!coursePageBean.getUrl().isEmpty())
+                match += "AND url='" + coursePageBean.getUrl() + "' ";
 
             if (!match.isEmpty())
                 sql += "WHERE " + match.substring(3);

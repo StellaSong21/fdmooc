@@ -14,7 +14,9 @@ public class TestAnswerDAO {
 //        answerDAO.append(answerBean);
 
 //        answerDAO.delete("1", "2");
-
+        AnswerBean b = new AnswerBean();
+        answerDAO.append(answerBean);
+        answerDAO.modify(b);
 //        answerDAO.modify(new AnswerBean("1", "2", "", "d"));
 
 //        List<Map<String, String>> result = answerDAO.infoList(answerBean);
