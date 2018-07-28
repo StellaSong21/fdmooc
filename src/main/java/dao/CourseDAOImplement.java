@@ -2,6 +2,7 @@ package dao;
 
 import entity.CourseBean;
 import util.DbUtil;
+import util.StringUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -54,13 +55,13 @@ public class CourseDAOImplement implements CourseDAO {
         try {
             String sql = "UPDATE `fdmooc`.`course` SET ";
             String match = "";
-            if (!courseBean.getTitle().isEmpty())
+            if (StringUtil.isNotEmpty(courseBean.getTitle()))
                 match += ", title='" + courseBean.getTitle() + "' ";
-            if (!courseBean.getTeacher_uid().isEmpty())
+            if (StringUtil.isNotEmpty(courseBean.getTeacher_uid()))
                 match += ", teacher_uid='" + courseBean.getTeacher_uid() + "' ";
-            if (!courseBean.getPic_url().isEmpty())
+            if (StringUtil.isNotEmpty(courseBean.getPic_url()))
                 match += ", pic_url='" + courseBean.getPic_url() + "' ";
-            if (!courseBean.getContent().isEmpty())
+            if (StringUtil.isNotEmpty(courseBean.getContent()))
                 match += ", content='" + courseBean.getContent() + "' ";
 
             if (!match.isEmpty())
@@ -83,15 +84,15 @@ public class CourseDAOImplement implements CourseDAO {
         try {
             String sql = "SELECT * FROM `fdmooc`.`course` ";
             String match = "";
-            if (!courseBean.getCid().isEmpty())
+            if (StringUtil.isNotEmpty(courseBean.getCid()))
                 match += "AND cid='" + courseBean.getCid() + "' ";
-            if (!courseBean.getTitle().isEmpty())
+            if (StringUtil.isNotEmpty(courseBean.getTitle()))
                 match += "AND title='" + courseBean.getTitle() + "' ";
-            if (!courseBean.getTeacher_uid().isEmpty())
+            if (StringUtil.isNotEmpty(courseBean.getTeacher_uid()))
                 match += "AND teacher_uid='" + courseBean.getTeacher_uid() + "' ";
-            if (!courseBean.getPic_url().isEmpty())
+            if (StringUtil.isNotEmpty(courseBean.getPic_url()))
                 match += "AND pic_url='" + courseBean.getPic_url() + "' ";
-            if (!courseBean.getContent().isEmpty())
+            if (StringUtil.isNotEmpty(courseBean.getContent()))
                 match += "AND content='" + courseBean.getContent() + "' ";
 
             if (!match.isEmpty())

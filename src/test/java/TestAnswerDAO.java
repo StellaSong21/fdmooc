@@ -9,13 +9,13 @@ public class TestAnswerDAO {
     public void test() throws Exception {
         new DbUtil();
         AnswerDAO answerDAO = DAOFactory.getAnswerDAOInstance();
-        AnswerBean answerBean = new AnswerBean("1", "2", "3", "");
+        AnswerBean answerBean = new AnswerBean("1", "2", "3", null);
 
 //        answerDAO.append(answerBean);
 
 //        answerDAO.delete("1", "2");
 
-//        answerDAO.modify(new AnswerBean("1", "2", "", "d"));
+        answerDAO.modify(new AnswerBean());
 
 //        List<Map<String, String>> result = answerDAO.infoList(answerBean);
 //        assertNotNull(result);

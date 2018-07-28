@@ -2,6 +2,7 @@ package dao;
 
 import entity.HomeworkBean;
 import util.DbUtil;
+import util.StringUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -56,15 +57,15 @@ public class HomeworkDAOImplement implements HomeworkDAO {
             String sql = "UPDATE `fdmooc`.`homework` SET ";
             String match = "";
 
-            if (!homeworkBean.getStart_time().isEmpty())
+            if (StringUtil.isNotEmpty(homeworkBean.getStart_time()))
                 match += ", start_time='" + homeworkBean.getStart_time() + "' ";
-            if (!homeworkBean.getTitle().isEmpty())
+            if (StringUtil.isNotEmpty(homeworkBean.getTitle()))
                 match += ", title='" + homeworkBean.getTitle() + "' ";
-            if (!homeworkBean.getContent().isEmpty())
+            if (StringUtil.isNotEmpty(homeworkBean.getContent()))
                 match += ", content='" + homeworkBean.getContent() + "' ";
-            if (!homeworkBean.getEnd_time().isEmpty())
+            if (StringUtil.isNotEmpty(homeworkBean.getEnd_time()))
                 match += ", end_time='" + homeworkBean.getEnd_time() + "' ";
-            if (!homeworkBean.getCid().isEmpty())
+            if (StringUtil.isNotEmpty(homeworkBean.getCid()))
                 match += ", cid='" + homeworkBean.getCid() + "' ";
 
             if (!match.isEmpty())
@@ -88,17 +89,17 @@ public class HomeworkDAOImplement implements HomeworkDAO {
         try {
             String sql = "SELECT * FROM `fdmooc`.`homework` ";
             String match = "";
-            if (!homeworkBean.getHid().isEmpty())
+            if (StringUtil.isNotEmpty(homeworkBean.getHid()))
                 match += "AND hid='" + homeworkBean.getHid() + "' ";
-            if (!homeworkBean.getStart_time().isEmpty())
+            if (StringUtil.isNotEmpty(homeworkBean.getStart_time()))
                 match += "AND start_time='" + homeworkBean.getStart_time() + "' ";
-            if (!homeworkBean.getTitle().isEmpty())
+            if (StringUtil.isNotEmpty(homeworkBean.getTitle()))
                 match += "AND title='" + homeworkBean.getTitle() + "' ";
-            if (!homeworkBean.getContent().isEmpty())
+            if (StringUtil.isNotEmpty(homeworkBean.getContent()))
                 match += "AND content='" + homeworkBean.getContent() + "' ";
-            if (!homeworkBean.getEnd_time().isEmpty())
+            if (StringUtil.isNotEmpty(homeworkBean.getEnd_time()))
                 match += "AND end_time='" + homeworkBean.getEnd_time() + "' ";
-            if (!homeworkBean.getCid().isEmpty())
+            if (StringUtil.isNotEmpty(homeworkBean.getCid()))
                 match += "AND cid='" + homeworkBean.getCid() + "' ";
 
             if (!match.isEmpty())

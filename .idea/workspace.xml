@@ -6,10 +6,18 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2882a6b3-3ff9-43af-9830-7b1b113009fe" name="Default" comment="Merge remote-tracking branch 'remotes/origin/chy'&#10;&#10;# Conflicts:&#10;#&#9;.idea/dataSources.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;build/libs/exploded/1.0-1.0-SNAPSHOT.war/WEB-INF/web.xml&#10;#&#9;build/libs/exploded/1.0-1.0-SNAPSHOT.war/index.jsp&#10;#&#9;src/main/webapp/WEB-INF/web.xml&#10;#&#9;src/main/webapp/index.jsp">
+    <list default="true" id="2882a6b3-3ff9-43af-9830-7b1b113009fe" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/AnswerDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AnswerDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/CourseDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/CourseDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/Course_pageDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Course_pageDAOImplement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/Course_tableDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Course_tableDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/HomeworkDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/HomeworkDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/RecordDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/RecordDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ResourceDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ResourceDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestAnswerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestAnswerDAO.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -88,11 +96,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AnswerDAOImplement.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AnswerDAOImplement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/AnswerDAOImplement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="21" column="46" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="46" />
+            <state relative-caret-position="71">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,13 +111,8 @@
       <file leaf-file-name="Course_pageDAOImplement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/Course_pageDAOImplement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="94" column="49" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="49" />
-              <folding>
-                <element signature="method#append#0;class#Course_pageDAOImplement#0" />
-                <element signature="method#delete#0;class#Course_pageDAOImplement#0" />
-                <element signature="method#modify#0;class#Course_pageDAOImplement#0" />
-              </folding>
+            <state relative-caret-position="361">
+              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -117,12 +120,8 @@
       <file leaf-file-name="Course_tableDAOImplement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/Course_tableDAOImplement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-              <folding>
-                <element signature="method#append#0;class#Course_tableDAOImplement#0" />
-                <element signature="method#infoList#0;class#Course_tableDAOImplement#0" />
-              </folding>
+            <state relative-caret-position="266">
+              <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -130,13 +129,17 @@
       <file leaf-file-name="CourseDAOImplement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/CourseDAOImplement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="56" column="46" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="46" />
-              <folding>
-                <element signature="method#append#0;class#CourseDAOImplement#0" />
-                <element signature="method#delete#0;class#CourseDAOImplement#0" />
-                <element signature="method#infoList#0;class#CourseDAOImplement#0" />
-              </folding>
+            <state relative-caret-position="133">
+              <caret line="17" column="45" lean-forward="true" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Discussion_boardDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -144,13 +147,8 @@
       <file leaf-file-name="Discussion_boardDAOImplement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAOImplement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="82" column="54" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="54" />
-              <folding>
-                <element signature="method#append#0;class#Discussion_boardDAOImplement#0" />
-                <element signature="method#delete#0;class#Discussion_boardDAOImplement#0" />
-                <element signature="method#modify#0;class#Discussion_boardDAOImplement#0" />
-              </folding>
+            <state relative-caret-position="133">
+              <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -158,12 +156,10 @@
       <file leaf-file-name="HomeworkDAOImplement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/HomeworkDAOImplement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="52" column="49" lean-forward="true" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+            <state relative-caret-position="503">
+              <caret line="101" column="26" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#append#0;class#HomeworkDAOImplement#0" />
-                <element signature="method#delete#0;class#HomeworkDAOImplement#0" />
               </folding>
             </state>
           </provider>
@@ -172,13 +168,32 @@
       <file leaf-file-name="RecordDAOImplement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/RecordDAOImplement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+            <state relative-caret-position="185">
+              <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#append#0;class#RecordDAOImplement#0" />
-                <element signature="method#infoList#0;class#RecordDAOImplement#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResourceDAOImplement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/ResourceDAOImplement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="83" column="27" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDAOImplement.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDAOImplement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -579,7 +594,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/disscussion.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/homework.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/signup.jsp" />
@@ -607,29 +621,30 @@
         <option value="$PROJECT_DIR$/src/main/java/entity/Course_tableBean.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestCourse_tableDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/CourseBean.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestAnswerDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/Course_pageDAOImplement.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestCourseDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Discussion_boardBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/CourseDAOImplement.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestDiscussion_boardDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAOImplement.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/HomeworkBean.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestHomeworkDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/HomeworkDAOImplement.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/RecordBean.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestRecordDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/RecordDAOImplement.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/ResourceDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/ResourceBean.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestResourceDAO.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestUserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/UserBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/StringUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestAnswerDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/AnswerDAOImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/Course_pageDAOImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/Course_tableDAOImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/CourseDAOImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAOImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/HomeworkDAOImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/RecordDAOImplement.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/ResourceDAOImplement.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/UserDAOImplement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/Course_tableDAOImplement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/AnswerDAOImplement.java" />
       </list>
     </option>
   </component>
@@ -656,8 +671,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="817" />
-    <option name="y" value="24" />
+    <option name="x" value="640" />
+    <option name="y" value="25" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
   </component>
@@ -702,6 +717,27 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fdmooc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fdmooc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="1.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fdmooc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -749,16 +785,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestUserDAO.test">
+  <component name="RunManager" selected="JUnit.TestAnswerDAO.test">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="TestDiscussion_boardDAO.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAnswerDAO.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="1.0_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestDiscussion_boardDAO" />
+      <option name="MAIN_CLASS_NAME" value="TestAnswerDAO" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -950,19 +986,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat" />
-      <item itemvalue="JUnit.TestDiscussion_boardDAO.test" />
       <item itemvalue="JUnit.TestHomeworkDAO.test" />
       <item itemvalue="JUnit.TestRecordDAO.test" />
       <item itemvalue="JUnit.TestResourceDAO" />
       <item itemvalue="JUnit.TestUserDAO.test" />
+      <item itemvalue="JUnit.TestAnswerDAO.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestAnswerDAO.test" />
         <item itemvalue="JUnit.TestUserDAO.test" />
         <item itemvalue="JUnit.TestResourceDAO" />
         <item itemvalue="JUnit.TestRecordDAO.test" />
         <item itemvalue="JUnit.TestHomeworkDAO.test" />
-        <item itemvalue="JUnit.TestDiscussion_boardDAO.test" />
       </list>
     </recent_temporary>
   </component>
@@ -990,7 +1026,7 @@
       <workItem from="1532667750357" duration="261000" />
       <workItem from="1532693474792" duration="6736000" />
       <workItem from="1532736466992" duration="26130000" />
-      <workItem from="1532767592084" duration="2154000" />
+      <workItem from="1532767592084" duration="7407000" />
     </task>
     <task id="LOCAL-00001" summary="huaq">
       <created>1532099547129</created>
@@ -1041,28 +1077,17 @@
       <option name="project" value="LOCAL" />
       <updated>1532762120615</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Merge remote-tracking branch 'remotes/origin/chy'&#10;&#10;# Conflicts:&#10;#&#9;.idea/dataSources.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;build/libs/exploded/1.0-1.0-SNAPSHOT.war/WEB-INF/web.xml&#10;#&#9;build/libs/exploded/1.0-1.0-SNAPSHOT.war/index.jsp&#10;#&#9;src/main/webapp/WEB-INF/web.xml&#10;#&#9;src/main/webapp/index.jsp">
+      <created>1532769853279</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1532769853290</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestUserDAO_test - 2018.07.28 at 15h 09m 09s.xml">
-      <configuration name="TestUserDAO.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestUserDAO_test - 2018.07.28 at 15h 09m 14s.xml">
-      <configuration name="TestUserDAO.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestUserDAO_test - 2018.07.28 at 15h 10m 03s.xml">
-      <configuration name="TestUserDAO.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestUserDAO_test - 2018.07.28 at 15h 10m 17s.xml">
-      <configuration name="TestUserDAO.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestUserDAO_test - 2018.07.28 at 15h 10m 26s.xml">
-      <configuration name="TestUserDAO.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestUserDAO_test - 2018.07.28 at 15h 10m 54s.xml">
-      <configuration name="TestUserDAO.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestUserDAO_test - 2018.07.28 at 15h 11m 12s.xml">
       <configuration name="TestUserDAO.test" configurationId="JUnit" />
     </history-entry>
@@ -1075,9 +1100,27 @@
     <history-entry file="TestUserDAO_test - 2018.07.28 at 15h 12m 03s.xml">
       <configuration name="TestUserDAO.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestAnswerDAO_test - 2018.07.28 at 18h 37m 11s.xml">
+      <configuration name="TestAnswerDAO.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAnswerDAO_test - 2018.07.28 at 18h 37m 46s.xml">
+      <configuration name="TestAnswerDAO.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAnswerDAO_test - 2018.07.28 at 18h 38m 19s.xml">
+      <configuration name="TestAnswerDAO.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAnswerDAO_test - 2018.07.28 at 18h 38m 41s.xml">
+      <configuration name="TestAnswerDAO.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAnswerDAO_test - 2018.07.28 at 18h 39m 36s.xml">
+      <configuration name="TestAnswerDAO.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAnswerDAO_test - 2018.07.28 at 18h 42m 08s.xml">
+      <configuration name="TestAnswerDAO.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111829000" />
+    <option name="totallyTimeSpent" value="117082000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1099,12 +1142,13 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info id="Capture Tool" order="13" />
       <window_info id="Designer" order="15" />
-      <window_info anchor="right" id="Database" order="15" weight="0.47651008" />
+      <window_info anchor="right" id="Database" order="15" weight="0.21261115" />
       <window_info id="Structure" order="9" sideWeight="0.5035842" side_tool="true" weight="0.18674211" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="14" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32616487" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32616487" />
       <window_info anchor="right" id="Palette&#9;" order="12" />
       <window_info id="Image Layers" order="12" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32795697" />
@@ -1118,7 +1162,6 @@
       <window_info anchor="right" id="Gradle" order="17" weight="0.16814874" />
       <window_info anchor="right" id="Theme Preview" order="14" />
       <window_info id="Favorites" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32616487" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32616487" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -1212,7 +1255,7 @@
     <MESSAGE value="document" />
     <MESSAGE value="jsp配置 后端架构" />
     <MESSAGE value="Merge remote-tracking branch 'remotes/origin/chy'&#10;&#10;# Conflicts:&#10;#&#9;.idea/dataSources.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;build/libs/exploded/1.0-1.0-SNAPSHOT.war/WEB-INF/web.xml&#10;#&#9;build/libs/exploded/1.0-1.0-SNAPSHOT.war/index.jsp&#10;#&#9;src/main/webapp/WEB-INF/web.xml&#10;#&#9;src/main/webapp/index.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'remotes/origin/chy'&#10;&#10;# Conflicts:&#10;#&#9;.idea/dataSources.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;build/libs/exploded/1.0-1.0-SNAPSHOT.war/WEB-INF/web.xml&#10;#&#9;build/libs/exploded/1.0-1.0-SNAPSHOT.war/index.jsp&#10;#&#9;src/main/webapp/WEB-INF/web.xml&#10;#&#9;src/main/webapp/index.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1226,13 +1269,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestDbUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="5" selection-start-line="7" selection-start-column="4" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1251,13 +1287,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -1317,6 +1346,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="method#AnswerBean#0;class#AnswerBean#0" />
+            <element signature="method#AnswerBean#1;class#AnswerBean#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1408,13 +1441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestAnswerDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1516,76 +1542,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ResourceDAOImplement.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/StringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDAOImplement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="81" column="65" selection-start-line="81" selection-start-column="65" selection-end-line="81" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Course_pageDAOImplement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="94" column="49" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="49" />
+        <state relative-caret-position="152">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding>
-            <element signature="method#append#0;class#Course_pageDAOImplement#0" />
-            <element signature="method#delete#0;class#Course_pageDAOImplement#0" />
-            <element signature="method#modify#0;class#Course_pageDAOImplement#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/CourseDAOImplement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="56" column="46" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="46" />
-          <folding>
-            <element signature="method#append#0;class#CourseDAOImplement#0" />
-            <element signature="method#delete#0;class#CourseDAOImplement#0" />
-            <element signature="method#infoList#0;class#CourseDAOImplement#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAOImplement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="82" column="54" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="54" />
-          <folding>
-            <element signature="method#append#0;class#Discussion_boardDAOImplement#0" />
-            <element signature="method#delete#0;class#Discussion_boardDAOImplement#0" />
-            <element signature="method#modify#0;class#Discussion_boardDAOImplement#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/HomeworkDAOImplement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="52" column="49" lean-forward="true" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#append#0;class#HomeworkDAOImplement#0" />
-            <element signature="method#delete#0;class#HomeworkDAOImplement#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/RecordDAOImplement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#append#0;class#RecordDAOImplement#0" />
-            <element signature="method#infoList#0;class#RecordDAOImplement#0" />
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1597,24 +1560,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Course_tableDAOImplement.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestAnswerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="114">
+          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
           <folding>
-            <element signature="method#append#0;class#Course_tableDAOImplement#0" />
-            <element signature="method#infoList#0;class#Course_tableDAOImplement#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/AnswerDAOImplement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="21" column="46" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="46" />
+        <state relative-caret-position="71">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Course_pageDAOImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Course_tableDAOImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/CourseDAOImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="17" column="45" lean-forward="true" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAOImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/HomeworkDAOImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="101" column="26" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/RecordDAOImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ResourceDAOImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="83" column="27" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDAOImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
         </state>
       </provider>
     </entry>

@@ -2,6 +2,7 @@ package dao;
 
 import entity.ResourceBean;
 import util.DbUtil;
+import util.StringUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -37,7 +38,7 @@ public class ResourceDAOImplement implements ResourceDAO {
         Connection conn = DbUtil.getConnecction();
         try {
             String sql = "DELETE FROM `fdmooc`.`resource` WHERE cid='" + resourceBean.getCid() + "'";
-            if (!resourceBean.getNumber().isEmpty()) {
+            if (StringUtil.isNotEmpty(resourceBean.getNumber())) {
                 sql += " AND `number`='" + resourceBean.getNumber() + "'";
             }
 
@@ -76,11 +77,11 @@ public class ResourceDAOImplement implements ResourceDAO {
         try {
             String sql = "SELECT * FROM `fdmooc`.`resource` ";
             String match = "";
-            if (!resourceBean.getCid().isEmpty())
+            if (!StringUtil.isEmpty(resourceBean.getCid()))
                 match += "AND cid='" + resourceBean.getCid() + "' ";
-            if (!resourceBean.getUrl().isEmpty())
+            if (!StringUtil.isEmpty(resourceBean.getUrl()))
                 match += "AND url='" + resourceBean.getUrl() + "' ";
-            if (!resourceBean.getNumber().isEmpty())
+            if (!StringUtil.isEmpty(resourceBean.getNumber()))
                 match += "AND `number`='" + resourceBean.getNumber() + "' ";
 
             if (!match.isEmpty())

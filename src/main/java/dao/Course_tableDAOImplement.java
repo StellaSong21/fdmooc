@@ -2,6 +2,7 @@ package dao;
 
 import entity.Course_tableBean;
 import util.DbUtil;
+import util.StringUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -33,7 +34,7 @@ public class Course_tableDAOImplement implements Course_tableDAO {
         Connection conn = DbUtil.getConnecction();
         try {
             String sql = "DELETE FROM `fdmooc`.`course_table` WHERE cid='" + course_tableBean.getCid() + "'";
-            if (!course_tableBean.getUid().isEmpty()) {
+            if (StringUtil.isNotEmpty(course_tableBean.getUid())) {
                 sql += " AND uid='" + course_tableBean.getUid() + "'";
             }
 
@@ -53,9 +54,9 @@ public class Course_tableDAOImplement implements Course_tableDAO {
         try {
             String sql = "SELECT * FROM `fdmooc`.`course_table` ";
             String match = "";
-            if (!course_tableBean.getCid().isEmpty())
+            if (StringUtil.isNotEmpty(course_tableBean.getCid()))
                 match += "AND cid='" + course_tableBean.getCid() + "' ";
-            if (!course_tableBean.getUid().isEmpty())
+            if (StringUtil.isNotEmpty(course_tableBean.getUid()))
                 match += "AND uid='" + course_tableBean.getUid() + "' ";
 
             if (!match.isEmpty())

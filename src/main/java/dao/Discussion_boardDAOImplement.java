@@ -2,6 +2,7 @@ package dao;
 
 import entity.Discussion_boardBean;
 import util.DbUtil;
+import util.StringUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -52,11 +53,11 @@ public class Discussion_boardDAOImplement implements Discussion_boardDAO {
         try {
             String sql = "UPDATE `fdmooc`.`discussion_board` SET ";
             String match = "";
-            if (!discussion_boardBean.getContent().isEmpty())
+            if (StringUtil.isNotEmpty(discussion_boardBean.getContent()))
                 match += ", content='" + discussion_boardBean.getContent() + "' ";
-            if (!discussion_boardBean.getTime().isEmpty())
+            if (StringUtil.isNotEmpty(discussion_boardBean.getTime()))
                 match += ", time='" + discussion_boardBean.getTime() + "' ";
-            if (!discussion_boardBean.getUid().isEmpty())
+            if (StringUtil.isNotEmpty(discussion_boardBean.getUid()))
                 match += ", uid='" + discussion_boardBean.getUid() + "' ";
 
             if (!match.isEmpty())
@@ -80,13 +81,13 @@ public class Discussion_boardDAOImplement implements Discussion_boardDAO {
         try {
             String sql = "SELECT * FROM `fdmooc`.`discussion_board` ";
             String match = "";
-            if (!discussion_boardBean.getDid().isEmpty())
+            if (StringUtil.isNotEmpty(discussion_boardBean.getDid()))
                 match += "AND did='" + discussion_boardBean.getDid() + "' ";
-            if (!discussion_boardBean.getContent().isEmpty())
+            if (StringUtil.isNotEmpty(discussion_boardBean.getContent()))
                 match += "AND content='" + discussion_boardBean.getContent() + "' ";
-            if (!discussion_boardBean.getTime().isEmpty())
+            if (StringUtil.isNotEmpty(discussion_boardBean.getTime()))
                 match += "AND time='" + discussion_boardBean.getTime() + "' ";
-            if (!discussion_boardBean.getUid().isEmpty())
+            if (StringUtil.isNotEmpty(discussion_boardBean.getUid()))
                 match += "AND uid='" + discussion_boardBean.getUid() + "' ";
 
             if (!match.isEmpty())

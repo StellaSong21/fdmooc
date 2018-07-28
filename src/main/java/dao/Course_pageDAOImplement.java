@@ -2,6 +2,7 @@ package dao;
 
 import entity.Course_pageBean;
 import util.DbUtil;
+import util.StringUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -20,7 +21,7 @@ public class Course_pageDAOImplement implements Course_pageDAO {
             String sql = "INSERT INTO `fdmooc`.`course_page` (cid,`number`,title,content,url) VALUES ('" +
                     course_pageBean.getCid() + "','" + course_pageBean.getNumber() + "','" + course_pageBean.getTitle() + "','" +
                     course_pageBean.getContent() + "', ";
-            if (course_pageBean.getUrl().isEmpty()) {
+            if (StringUtil.isNotEmpty(course_pageBean.getUrl())) {
                 sql += null + ")";
             } else {
                 sql += "'" + course_pageBean.getUrl() + "')";
@@ -58,15 +59,15 @@ public class Course_pageDAOImplement implements Course_pageDAO {
         try {
             String sql = "UPDATE `fdmooc`.`course_page` SET ";
             String match = "";
-            if (!course_pageBean.getCid().isEmpty())
+            if (StringUtil.isNotEmpty(course_pageBean.getCid()))
                 match += ", cid='" + course_pageBean.getCid() + "' ";
-            if (!course_pageBean.getNumber().isEmpty())
+            if (StringUtil.isNotEmpty(course_pageBean.getNumber()))
                 match += ", number='" + course_pageBean.getNumber() + "' ";
-            if (!course_pageBean.getTitle().isEmpty())
+            if (StringUtil.isNotEmpty(course_pageBean.getTitle()))
                 match += ", title='" + course_pageBean.getTitle() + "' ";
-            if (!course_pageBean.getContent().isEmpty())
+            if (StringUtil.isNotEmpty(course_pageBean.getContent()))
                 match += ", content='" + course_pageBean.getContent() + "' ";
-            if (!course_pageBean.getUrl().isEmpty())
+            if (StringUtil.isNotEmpty(course_pageBean.getUrl()))
                 match += ", url='" + course_pageBean.getUrl() + "' ";
 
             if (!match.isEmpty()) {
@@ -92,17 +93,17 @@ public class Course_pageDAOImplement implements Course_pageDAO {
         try {
             String sql = "SELECT * FROM `fdmooc`.`course_page` ";
             String match = "";
-            if (!course_pageBean.getPid().isEmpty())
+            if (StringUtil.isNotEmpty(course_pageBean.getPid()))
                 match += "AND pid='" + course_pageBean.getPid() + "' ";
-            if (!course_pageBean.getCid().isEmpty())
+            if (StringUtil.isNotEmpty(course_pageBean.getCid()))
                 match += "AND cid='" + course_pageBean.getCid() + "' ";
-            if (!course_pageBean.getNumber().isEmpty())
+            if (StringUtil.isNotEmpty(course_pageBean.getNumber()))
                 match += "AND number='" + course_pageBean.getNumber() + "' ";
-            if (!course_pageBean.getTitle().isEmpty())
+            if (StringUtil.isNotEmpty(course_pageBean.getTitle()))
                 match += "AND title='" + course_pageBean.getTitle() + "' ";
-            if (!course_pageBean.getContent().isEmpty())
+            if (StringUtil.isNotEmpty(course_pageBean.getContent()))
                 match += "AND content='" + course_pageBean.getContent() + "' ";
-            if (!course_pageBean.getUrl().isEmpty())
+            if (StringUtil.isNotEmpty(course_pageBean.getUrl()))
                 match += "AND url='" + course_pageBean.getUrl() + "' ";
 
             if (!match.isEmpty())
