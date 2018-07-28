@@ -1,14 +1,16 @@
 package service;
 
+import entity.UserBean;
+
+import java.util.Map;
+
 public abstract class UserSevice {
     public abstract int hasUsername();
 
-    public abstract int hasEmail();
+    public abstract Map<String, String> userInfo(String uid);
 
-    public abstract int userInfo();
+    public abstract int login(UserBean user);
 
-    public abstract int login();
-
-    public abstract int register();
+    public abstract int register(UserBean user);
 
 }
