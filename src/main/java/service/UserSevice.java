@@ -1,6 +1,7 @@
 package service;
 
 public abstract class UserSevice {
+
     public abstract int hasUsername();
 
     public abstract int hasEmail();

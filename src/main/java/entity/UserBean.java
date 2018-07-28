@@ -21,6 +21,14 @@ public class UserBean {
         this.email = email;
     }
 
+    public UserBean(String username, String nickname, String password, String authority, String email) {
+        this.username = username;
+        this.nickname = nickname;
+        this.password = password;
+        this.authority = authority;
+        this.email = email;
+    }
+
     public String getAuthority() {
         return authority;
     }
