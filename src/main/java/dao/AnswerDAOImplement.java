@@ -34,7 +34,6 @@ public class AnswerDAOImplement implements AnswerDAO {
         }
     }
 
-    //删除，根据uid和hid删除，uid可以为空
     @Override
     public int delete(String uid, String hid) {
         Connection conn = DbUtil.getConnecction();
@@ -53,7 +52,7 @@ public class AnswerDAOImplement implements AnswerDAO {
         }
     }
 
-    //更新，传入一个bean对象，搜索条件是 uid 和 hid，更新 content 和 grade，content 和 grade 至少有一项不为空
+    //修改，传入一个bean对象，搜索条件是 uid 和 hid，更新 content 和 grade，content 和 grade 至少有一项不为空
     @Override
     public int modify(AnswerBean answerBean) {
         Connection conn = DbUtil.getConnecction();

@@ -27,7 +27,7 @@ public class Course_tableDAOImplement implements Course_tableDAO {
         }
     }
 
-    //uid可以为空字符串
+
     @Override
     public int delete(Course_tableBean course_tableBean) {
         Connection conn = DbUtil.getConnecction();
