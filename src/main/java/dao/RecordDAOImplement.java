@@ -2,6 +2,7 @@ package dao;
 
 import entity.RecordBean;
 import util.DbUtil;
+import util.StringUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -37,11 +38,11 @@ public class RecordDAOImplement implements RecordDAO {
         try {
             String sql = "DELETE FROM `fdmooc`.`record` WHERE ";
             String match = "";
-            if (!recordBean.getUid().isEmpty())
+            if (StringUtil.isNotEmpty(recordBean.getUid()))
                 match += "AND uid='" + recordBean.getUid() + "' ";
-            if (!recordBean.getCid().isEmpty())
+            if (StringUtil.isNotEmpty(recordBean.getCid()))
                 match += "AND cid='" + recordBean.getCid() + "' ";
-            if (!recordBean.getPid().isEmpty())
+            if (StringUtil.isNotEmpty(recordBean.getPid()))
                 match += "AND pid='" + recordBean.getPid() + "' ";
 
             if (!match.isEmpty())
@@ -63,11 +64,11 @@ public class RecordDAOImplement implements RecordDAO {
         try {
             String sql = "SELECT * FROM `fdmooc`.`record` ";
             String match = "";
-            if (!recordBean.getUid().isEmpty())
+            if (StringUtil.isNotEmpty(recordBean.getUid()))
                 match += "AND uid='" + recordBean.getUid() + "' ";
-            if (!recordBean.getCid().isEmpty())
+            if (StringUtil.isNotEmpty(recordBean.getCid()))
                 match += "AND cid='" + recordBean.getCid() + "' ";
-            if (!recordBean.getPid().isEmpty())
+            if (StringUtil.isNotEmpty(recordBean.getPid()))
                 match += "AND pid='" + recordBean.getPid() + "' ";
 
             if (!match.isEmpty())

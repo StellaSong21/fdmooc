@@ -1,7 +1,8 @@
 package dao;
 
-import entity.courseTableBean;
+import entity.Course_tableBean;
 import util.DbUtil;
+import util.StringUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,10 +14,10 @@ import java.util.Map;
 
 public class Course_tableDAOImplement implements Course_tableDAO {
     @Override
-    public int append(courseTableBean courseTableBean) {
+    public int append(Course_tableBean course_tableBean) {
         Connection conn = DbUtil.getConnecction();
         try {
-            String sql = "INSERT INTO `fdmooc`.`course_table` (cid,uid) VALUES ('" + courseTableBean.getCid() + "','" + courseTableBean.getUid() + "')";
+            String sql = "INSERT INTO `fdmooc`.`course_table` (cid,uid) VALUES ('" + course_tableBean.getCid() + "','" + course_tableBean.getUid() + "')";
             PreparedStatement ppst = conn.prepareStatement(sql);
             int re = ppst.executeUpdate();
             DbUtil.closeConnection();
@@ -27,14 +28,14 @@ public class Course_tableDAOImplement implements Course_tableDAO {
         }
     }
 
-    //uid可以为空字符串
+
     @Override
-    public int delete(courseTableBean courseTableBean) {
+    public int delete(Course_tableBean course_tableBean) {
         Connection conn = DbUtil.getConnecction();
         try {
-            String sql = "DELETE FROM `fdmooc`.`course_table` WHERE cid='" + courseTableBean.getCid() + "'";
-            if (!courseTableBean.getUid().isEmpty()) {
-                sql += " AND uid='" + courseTableBean.getUid() + "'";
+            String sql = "DELETE FROM `fdmooc`.`course_table` WHERE cid='" + course_tableBean.getCid() + "'";
+            if (StringUtil.isNotEmpty(course_tableBean.getUid())) {
+                sql += " AND uid='" + course_tableBean.getUid() + "'";
             }
 
             PreparedStatement ppst = conn.prepareStatement(sql);
@@ -48,15 +49,15 @@ public class Course_tableDAOImplement implements Course_tableDAO {
     }
 
     @Override
-    public List<Map<String, String>> infoList(courseTableBean courseTableBean) {
+    public List<Map<String, String>> infoList(Course_tableBean course_tableBean) {
         Connection conn = DbUtil.getConnecction();
         try {
             String sql = "SELECT * FROM `fdmooc`.`course_table` ";
             String match = "";
-            if (!courseTableBean.getCid().isEmpty())
-                match += "AND cid='" + courseTableBean.getCid() + "' ";
-            if (!courseTableBean.getUid().isEmpty())
-                match += "AND uid='" + courseTableBean.getUid() + "' ";
+            if (StringUtil.isNotEmpty(course_tableBean.getCid()))
+                match += "AND cid='" + course_tableBean.getCid() + "' ";
+            if (StringUtil.isNotEmpty(course_tableBean.getUid()))
+                match += "AND uid='" + course_tableBean.getUid() + "' ";
 
             if (!match.isEmpty())
                 sql += "WHERE " + match.substring(3);

@@ -2,6 +2,7 @@ package dao;
 
 import entity.UserBean;
 import util.DbUtil;
+import util.StringUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -51,15 +52,15 @@ public class UserDAOImplement implements UserDAO {
         try {
             String sql = "UPDATE `fdmooc`.`user` SET ";
             String match = "";
-            if (!userBean.getUsername().isEmpty())
+            if (StringUtil.isNotEmpty(userBean.getUsername()))
                 match += ", username='" + userBean.getUsername() + "' ";
-            if (!userBean.getNickname().isEmpty())
+            if (StringUtil.isNotEmpty(userBean.getNickname()))
                 match += ", nickname='" + userBean.getNickname() + "' ";
-            if (!userBean.getPassword().isEmpty())
+            if (StringUtil.isNotEmpty(userBean.getPassword()))
                 match += ", password='" + userBean.getPassword() + "' ";
-            if (!userBean.getAuthority().isEmpty())
+            if (StringUtil.isNotEmpty(userBean.getAuthority()))
                 match += ", authority='" + userBean.getAuthority() + "' ";
-            if (!userBean.getEmail().isEmpty())
+            if (StringUtil.isEmpty(userBean.getEmail()))
                 match += ", email='" + userBean.getEmail() + "' ";
 
             if (!match.isEmpty())
@@ -84,17 +85,17 @@ public class UserDAOImplement implements UserDAO {
         try {
             String sql = "SELECT * FROM `fdmooc`.`user` ";
             String match = "";
-            if (!userBean.getUid().isEmpty())
+            if (StringUtil.isNotEmpty(userBean.getUid()))
                 match += "AND uid='" + userBean.getUid() + "' ";
-            if (!userBean.getUsername().isEmpty())
+            if (StringUtil.isNotEmpty(userBean.getUsername()))
                 match += "AND username='" + userBean.getUsername() + "' ";
-            if (!userBean.getNickname().isEmpty())
+            if (StringUtil.isNotEmpty(userBean.getNickname()))
                 match += "AND nickname='" + userBean.getNickname() + "' ";
-            if (!userBean.getPassword().isEmpty())
+            if (StringUtil.isNotEmpty(userBean.getPassword()))
                 match += "AND password='" + userBean.getPassword() + "' ";
-            if (!userBean.getAuthority().isEmpty())
+            if (StringUtil.isNotEmpty(userBean.getAuthority()))
                 match += "AND authority='" + userBean.getAuthority() + "' ";
-            if (!userBean.getEmail().isEmpty())
+            if (StringUtil.isNotEmpty(userBean.getEmail()))
                 match += "AND email='" + userBean.getEmail() + "' ";
             if (!match.isEmpty())
                 sql += "WHERE " + match.substring(3);
