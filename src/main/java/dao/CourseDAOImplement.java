@@ -16,7 +16,7 @@ public class CourseDAOImplement implements CourseDAO {
 
     @Override
     public int append(CourseBean courseBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "INSERT  INTO `fdmooc`.`course` (title, teacher_uid, pic_url, content) VALUES (?, ?, ?, ?)";
             PreparedStatement ppst = conn.prepareStatement(sql);
@@ -30,13 +30,14 @@ public class CourseDAOImplement implements CourseDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public int delete(String cid) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "DELETE FROM `fdmooc`.`course` WHERE cid='" + cid + "'";
             PreparedStatement ps = conn.prepareStatement(sql);
@@ -45,13 +46,14 @@ public class CourseDAOImplement implements CourseDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public int modify(CourseBean courseBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "UPDATE `fdmooc`.`course` SET ";
             String match = "";
@@ -74,13 +76,14 @@ public class CourseDAOImplement implements CourseDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public List<Map<String, String>> infoList(CourseBean courseBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "SELECT * FROM `fdmooc`.`course` ";
             String match = "";
@@ -106,7 +109,7 @@ public class CourseDAOImplement implements CourseDAO {
                 Map<String, String> map = new HashMap<>();
                 map.put("cid", re.getString("cid"));
                 map.put("title", re.getString("title"));
-                map.put("teacher_uid", re.getString("teacher_uid"));
+                map.put("teacher_id", re.getString("teacher_id"));
                 map.put("pic_url", re.getString("pic_url"));
                 map.put("content", re.getString("content"));
                 result.add(map);
@@ -115,6 +118,7 @@ public class CourseDAOImplement implements CourseDAO {
 
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return null;
         }
     }

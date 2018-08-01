@@ -1,17 +1,17 @@
 package service;
 
-import entity.UserBean;
-
-import java.util.Map;
+import com.google.gson.JsonObject;
 
 public abstract class UserSevice {
 
-    public abstract int hasUsername();
+    public abstract JsonObject userInfo();
 
-    public abstract Map<String, String> userInfo(String uid);
+    public abstract int login();
 
-    public abstract int login(UserBean user);
+    public abstract int register();
 
-    public abstract int register(UserBean user);
+    public abstract boolean hasUsername(String username);
+
+    public abstract int sendVerifyCode();
 
 }

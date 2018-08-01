@@ -15,7 +15,8 @@ import java.util.Map;
 public class Discussion_boardDAOImplement implements Discussion_boardDAO {
     @Override
     public int append(Discussion_boardBean discussion_boardBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
+
         try {
             String sql = "INSERT INTO `fdmooc`.`discussion_board` (content,`time`,uid) VALUES (?, ?, ?)";
             PreparedStatement ppst = conn.prepareStatement(sql);
@@ -28,13 +29,14 @@ public class Discussion_boardDAOImplement implements Discussion_boardDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public int delete(String did) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "DELETE FROM `fdmooc`.`discussion_board` WHERE did='" + did + "'";
             PreparedStatement ppst = conn.prepareStatement(sql);
@@ -43,13 +45,14 @@ public class Discussion_boardDAOImplement implements Discussion_boardDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public int modify(Discussion_boardBean discussion_boardBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "UPDATE `fdmooc`.`discussion_board` SET ";
             String match = "";
@@ -71,13 +74,14 @@ public class Discussion_boardDAOImplement implements Discussion_boardDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public List<Map<String, String>> infoList(Discussion_boardBean discussion_boardBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "SELECT * FROM `fdmooc`.`discussion_board` ";
             String match = "";
@@ -109,6 +113,7 @@ public class Discussion_boardDAOImplement implements Discussion_boardDAO {
 
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return null;
         }
     }

@@ -16,7 +16,7 @@ public class AnswerDAOImplement implements AnswerDAO {
 
     @Override
     public int append(AnswerBean answerBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "INSERT INTO `fdmooc`.`answer` (uid,hid,content,grade) VALUES (" +
                     answerBean.getUid() + "," + answerBean.getHid() + ",'" + answerBean.getContent() + "',";
@@ -31,13 +31,14 @@ public class AnswerDAOImplement implements AnswerDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public int delete(String uid, String hid) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "DELETE FROM `fdmooc`.`answer` WHERE hid='" + hid + "'";
             if (StringUtil.isNotEmpty(uid)) {
@@ -49,13 +50,14 @@ public class AnswerDAOImplement implements AnswerDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public int modify(AnswerBean answerBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "UPDATE `fdmooc`.`answer` ";
             String match = "";
@@ -75,13 +77,14 @@ public class AnswerDAOImplement implements AnswerDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public List<Map<String, String>> infoList(AnswerBean answerBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "SELECT * FROM `fdmooc`.`answer` ";
             String match = "";
@@ -113,6 +116,7 @@ public class AnswerDAOImplement implements AnswerDAO {
 
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return null;
         }
     }

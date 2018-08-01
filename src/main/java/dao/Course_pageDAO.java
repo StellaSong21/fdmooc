@@ -1,16 +1,15 @@
 package dao;
 
-import entity.coursePageBean;
+import entity.Course_pageBean;
 
 import java.util.List;
-import java.util.Map;
 
 public interface Course_pageDAO {
-    int append(coursePageBean coursePageBean);
+    int append(Course_pageBean Course_pageBean);
 
     int delete(String pid);
 
-    int modify(coursePageBean coursePageBean);
+    int modify(Course_pageBean Course_pageBean);
 
-    List<Map<String, String>> infoList(coursePageBean coursePageBean);
+    List<Course_pageBean> infoList(Course_pageBean Course_pageBean);
 }

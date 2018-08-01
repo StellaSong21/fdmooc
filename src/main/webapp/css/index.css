@@ -1,0 +1,42 @@
+body {
+    background: black;
+    color: aliceblue;
+}
+
+#top-hot {
+    margin: 90px 215px;
+    height: 65%;
+    width: 70%;
+}
+
+#top-hot img {
+    width: 100%;
+    height: 100%;
+}
+
+#latest-course {
+    width: 70%;
+    margin: 50px auto;
+}
+
+#latest-course-list div {
+    padding: 15px auto;
+}
+
+#latest1, #latest2, #latest0 {
+    display: block;
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+#latest-course img {
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#latest-course h5 {
+    text-align: center;
+}

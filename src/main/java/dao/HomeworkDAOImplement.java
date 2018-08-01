@@ -15,7 +15,7 @@ import java.util.Map;
 public class HomeworkDAOImplement implements HomeworkDAO {
     @Override
     public int append(HomeworkBean homeworkBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "INSERT INTO `fdmooc`.`homework` (start_time,title,content,end_time,cid) VALUES (?, ?, ?, ?, ?)";
             PreparedStatement ppst = conn.prepareStatement(sql);
@@ -31,13 +31,14 @@ public class HomeworkDAOImplement implements HomeworkDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public int delete(String hid) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "DELETE FROM `fdmooc`.`homework` WHERE hid='" + hid + "'";
             PreparedStatement ps = conn.prepareStatement(sql);
@@ -46,13 +47,14 @@ public class HomeworkDAOImplement implements HomeworkDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public int modify(HomeworkBean homeworkBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "UPDATE `fdmooc`.`homework` SET ";
             String match = "";
@@ -65,8 +67,6 @@ public class HomeworkDAOImplement implements HomeworkDAO {
                 match += ", content='" + homeworkBean.getContent() + "' ";
             if (StringUtil.isNotEmpty(homeworkBean.getEnd_time()))
                 match += ", end_time='" + homeworkBean.getEnd_time() + "' ";
-            if (StringUtil.isNotEmpty(homeworkBean.getCid()))
-                match += ", cid='" + homeworkBean.getCid() + "' ";
 
             if (!match.isEmpty())
                 sql += match.substring(1);
@@ -79,13 +79,14 @@ public class HomeworkDAOImplement implements HomeworkDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public List<Map<String, String>> infoList(HomeworkBean homeworkBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "SELECT * FROM `fdmooc`.`homework` ";
             String match = "";
@@ -123,6 +124,7 @@ public class HomeworkDAOImplement implements HomeworkDAO {
 
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return null;
         }
     }

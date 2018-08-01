@@ -1,6 +1,6 @@
 import dao.Course_tableDAO;
 import dao.DAOFactory;
-import entity.courseTableBean;
+import entity.Course_tableBean;
 import org.junit.Test;
 import util.DbUtil;
 
@@ -9,15 +9,15 @@ public class TestCourse_tableDAO {
     public void test() {
         new DbUtil();
         Course_tableDAO course_tableDAO = DAOFactory.getCourse_tableDAOInstance();
-        courseTableBean courseTableBean = new courseTableBean("", "");
+        Course_tableBean Course_tableBean = new Course_tableBean("", "");
 
-//        course_tableDAO.append(courseTableBean);
+//        course_tableDAO.append(Course_tableBean);
 
-        course_tableDAO.delete(new courseTableBean("1", ""));
+        course_tableDAO.delete(new Course_tableBean("1", ""));
 
-//        List<Map<String, String>> result = course_tableDAO.infoList(courseTableBean);
+//        List<Map<String, String>> result = course_tableDAO.infoList(Course_tableBean);
 //        assertNotNull(result);
 //        Map<String, String> m = result.get(0);
-//        assertEquals(courseTableBean.getUid(), m.get("uid"));
+//        assertEquals(Course_tableBean.getUid(), m.get("uid"));
     }
 }

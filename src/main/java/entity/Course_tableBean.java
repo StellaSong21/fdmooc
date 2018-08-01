@@ -1,13 +1,13 @@
 package entity;
 
-public class courseTableBean {
+public class Course_tableBean {
     private String cid;
     private String uid;
 
-    public courseTableBean() {
+    public Course_tableBean() {
     }
 
-    public courseTableBean(String cid, String uid) {
+    public Course_tableBean(String cid, String uid) {
         this.cid = cid;
         this.uid = uid;
     }

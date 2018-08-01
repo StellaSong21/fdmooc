@@ -1,6 +1,6 @@
 import dao.DAOFactory;
 import dao.Discussion_boardDAO;
-import entity.discussionBoardBean;
+import entity.Discussion_boardBean;
 import org.junit.Test;
 import util.DbUtil;
 
@@ -9,17 +9,17 @@ public class TestDiscussion_boardDAO {
     public void test() {
         new DbUtil();
         Discussion_boardDAO discussion_boardDAO = DAOFactory.getDiscussion_boardDAOInstance();
-        discussionBoardBean discussionBoardBean = new discussionBoardBean("1", "we", "2000-2-22", "1");
+        Discussion_boardBean Discussion_boardBean = new Discussion_boardBean("1", "we", "2000-2-22", "1");
 
-//        discussion_boardDAO.append(discussionBoardBean);
+//        discussion_boardDAO.append(Discussion_boardBean);
 
 //        discussion_boardDAO.delete("1");
 
-//        discussion_boardDAO.modify(new discussionBoardBean("1", "yu", "", "4"));
+//        discussion_boardDAO.modify(new Discussion_boardBean("1", "yu", "", "4"));
 
-//        List<Map<String, String>> result = discussion_boardDAO.infoList(discussionBoardBean);
+//        List<Map<String, String>> result = discussion_boardDAO.infoList(Discussion_boardBean);
 //        assertNotNull(result);
 //        Map<String, String> m = result.get(0);
-//        assertEquals(discussionBoardBean.getDid(), m.get("did"));
+//        assertEquals(Discussion_boardBean.getDid(), m.get("did"));
     }
 }

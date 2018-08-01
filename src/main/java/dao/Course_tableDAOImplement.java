@@ -15,7 +15,7 @@ import java.util.Map;
 public class Course_tableDAOImplement implements Course_tableDAO {
     @Override
     public int append(Course_tableBean course_tableBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "INSERT INTO `fdmooc`.`course_table` (cid,uid) VALUES ('" + course_tableBean.getCid() + "','" + course_tableBean.getUid() + "')";
             PreparedStatement ppst = conn.prepareStatement(sql);
@@ -24,6 +24,7 @@ public class Course_tableDAOImplement implements Course_tableDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
@@ -31,7 +32,7 @@ public class Course_tableDAOImplement implements Course_tableDAO {
 
     @Override
     public int delete(Course_tableBean course_tableBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "DELETE FROM `fdmooc`.`course_table` WHERE cid='" + course_tableBean.getCid() + "'";
             if (StringUtil.isNotEmpty(course_tableBean.getUid())) {
@@ -44,13 +45,14 @@ public class Course_tableDAOImplement implements Course_tableDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public List<Map<String, String>> infoList(Course_tableBean course_tableBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "SELECT * FROM `fdmooc`.`course_table` ";
             String match = "";
@@ -76,6 +78,7 @@ public class Course_tableDAOImplement implements Course_tableDAO {
 
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return null;
         }
 

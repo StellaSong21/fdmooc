@@ -15,7 +15,7 @@ import java.util.Map;
 public class RecordDAOImplement implements RecordDAO {
     @Override
     public int append(RecordBean recordBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "INSERT INTO `fdmooc`.`record` (uid,cid,pid) VALUES (?, ?, ?)";
             PreparedStatement ppst = conn.prepareStatement(sql);
@@ -28,13 +28,14 @@ public class RecordDAOImplement implements RecordDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public int delete(RecordBean recordBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "DELETE FROM `fdmooc`.`record` WHERE ";
             String match = "";
@@ -54,13 +55,14 @@ public class RecordDAOImplement implements RecordDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public List<Map<String, String>> infoList(RecordBean recordBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "SELECT * FROM `fdmooc`.`record` ";
             String match = "";
@@ -89,6 +91,7 @@ public class RecordDAOImplement implements RecordDAO {
 
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return null;
         }
     }

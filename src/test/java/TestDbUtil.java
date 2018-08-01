@@ -7,6 +7,6 @@ public class TestDbUtil {
 
     @Test
     public void test() throws Exception {
-        assertNotNull(new DbUtil().getConnecction());
+        assertNotNull(DbUtil.getConnection());
     }
 }

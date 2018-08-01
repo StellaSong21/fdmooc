@@ -15,7 +15,7 @@ import java.util.Map;
 public class UserDAOImplement implements UserDAO {
     @Override
     public int append(UserBean userBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "INSERT INTO `fdmooc`.`user` (username,nickname,password,authority,email) VALUES ('" +
                     userBean.getUsername() + "','" + userBean.getNickname() + "','" + userBean.getPassword() + "','" + userBean.getAuthority()
@@ -27,13 +27,14 @@ public class UserDAOImplement implements UserDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public int delete(String uid) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "DELETE FROM `fdmooc`.`user` WHERE uid='" + uid + "'";
             PreparedStatement ps = conn.prepareStatement(sql);
@@ -42,13 +43,14 @@ public class UserDAOImplement implements UserDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public int modify(UserBean userBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "UPDATE `fdmooc`.`user` SET ";
             String match = "";
@@ -75,13 +77,14 @@ public class UserDAOImplement implements UserDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public List<Map<String, String>> infoList(UserBean userBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "SELECT * FROM `fdmooc`.`user` ";
             String match = "";
@@ -118,6 +121,7 @@ public class UserDAOImplement implements UserDAO {
 
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return null;
         }
     }

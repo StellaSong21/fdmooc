@@ -7,7 +7,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2882a6b3-3ff9-43af-9830-7b1b113009fe" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/forsession.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/1.0-1.0-SNAPSHOT.war/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/1.0-1.0-SNAPSHOT.war/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/exploded/1.0-1.0-SNAPSHOT.war/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/exploded/1.0-1.0-SNAPSHOT.war/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AnswerDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AnswerDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/CourseDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/CourseDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/Course_pageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Course_pageDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/Course_pageDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Course_pageDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/Course_tableDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Course_tableDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/Course_tableDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Course_tableDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/HomeworkDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/HomeworkDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/RecordDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/RecordDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ResourceDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ResourceDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDAOImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDAOImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Course_pageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Course_pageBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Course_tableBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Course_tableBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Discussion_boardBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Discussion_boardBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/CourseServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CourseServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/DiscussionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DiscussionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/DiscussionServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DiscussionServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/MailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserSevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserSevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/coursePageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/Servlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/ComparatorCoursePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ComparatorCoursePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/DbUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/DbUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/EncryptUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/EncryptUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/MessageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/MessageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCourse_pageDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCourse_pageDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCourse_tableDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCourse_tableDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestDbUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDbUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestDiscussion_boardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDiscussion_boardDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -51,7 +105,14 @@
         <item name="fdmooc@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="fdmooc: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="answer: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="course: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="fdmooc@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="fdmooc: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="course_page: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -101,29 +162,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AnswerDAOImplement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/AnswerDAOImplement.java">
+      <file leaf-file-name="register.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1026">
-              <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
+            <state relative-caret-position="540">
+              <caret line="85" column="1" lean-forward="true" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Course_pageDAOImplement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/Course_pageDAOImplement.java">
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+            <state relative-caret-position="285">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MailService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/MailService.java">
+      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/register.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="184">
+              <caret line="27" column="104" selection-start-line="27" selection-start-column="104" selection-end-line="27" selection-end-column="104" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Servlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/servlet/Servlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -131,29 +210,61 @@
       <file leaf-file-name="UserDAOImplement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDAOImplement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="55" column="50" lean-forward="true" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
+            <state relative-caret-position="323">
+              <caret line="106" selection-start-line="106" selection-end-line="106" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" selection-start-line="10" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceImplement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/UserServiceImplement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="83" column="51" lean-forward="true" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#532#533#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="answer" pinned="false" current-in-tab="false">
-        <entry file="das://434c8ab7-6a4f-4e3c-ad4b-32c0db83f777/schema/fdmooc/table/answer">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Course_tableDAOImplement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/Course_tableDAOImplement.java">
+      <file leaf-file-name="CourseServiceImplement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/CourseServiceImplement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="39" column="64" lean-forward="true" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
+            <state relative-caret-position="506">
+              <caret line="148" column="42" selection-start-line="148" selection-start-column="42" selection-end-line="148" selection-end-column="42" />
+              <folding>
+                <element signature="method#getCoursePageInfo#0;class#CourseServiceImplement#0" />
+                <element signature="method#modifyHomework#0;class#CourseServiceImplement#0" />
+                <element signature="method#getHomeworkInfo#0;class#CourseServiceImplement#0" />
+                <element signature="method#createCourseTable#0;class#CourseServiceImplement#0" />
+                <element signature="method#deleteCourseTable#0;class#CourseServiceImplement#0" />
+                <element signature="method#courseTableInfo#0;class#CourseServiceImplement#0" />
+                <element signature="method#createAnswer#0;class#CourseServiceImplement#0" />
+                <element signature="method#deleteAnswer#0;class#CourseServiceImplement#0" />
+                <element signature="method#modifyAnswer#0;class#CourseServiceImplement#0" />
+                <element signature="method#getAnswerInfo#0;class#CourseServiceImplement#0" />
+                <element signature="method#createRecord#0;class#CourseServiceImplement#0" />
+                <element signature="method#deleteRecord#0;class#CourseServiceImplement#0" />
+                <element signature="method#getRecordInfo#0;class#CourseServiceImplement#0" />
+                <element signature="method#createResource#0;class#CourseServiceImplement#0" />
+                <element signature="method#deleteResource#0;class#CourseServiceImplement#0" />
+                <element signature="method#modifyResource#0;class#CourseServiceImplement#0" />
+                <element signature="method#getResourceInfo#0;class#CourseServiceImplement#0" />
+                <element signature="method#getTopHotCourse#0;class#CourseServiceImplement#0" />
+                <element signature="method#getLatestCourse#0;class#CourseServiceImplement#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,8 +275,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="CSS File" />
+        <option value="Jsp File" />
+        <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>set</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -358,9 +477,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6128130804661" />
+        <entry key="$PROJECT_DIR$" value="6128518883255" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="3332750594" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1226733670" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2083459160" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="2748859933" />
       </map>
@@ -545,27 +664,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/server/servlet/Servlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/Entity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/DAOFactory.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/servlet/Servlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/60898e5c-0e60-4afa-a3fc-f6d6b8befe8a/console.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fb5790b7-f347-4f45-aa97-2baadc5bfe0e/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/test/TestDbUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/UserBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/UserDAOImplement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/UserSevice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/UserServiceImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/DiscussionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/Course_pageDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Course_pageBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/ComparatorCoursePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/CourseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/DiscussionServiceImplement.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/MessageUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/StringUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestAnswerDAO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestDbUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/coursePageServlet.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestJson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/CourseServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/CreateCourseServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/HomeworkServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/PersonalServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/ResourceServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/SignServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/SearchServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/StatisticsServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/IndexServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/index.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/index.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/nav.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/coursepage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/AnswerDAOImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/Course_pageDAOImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/Course_tableDAOImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/RecordDAOImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/UserDAOImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/CourseDAOImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAOImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/ResourceDAOImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/HomeworkDAOImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/coursepage.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/loginsuccess.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/forsession.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/service/UserSevice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/MailService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestService.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/DbUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/login.js" />
+        <option value="$PROJECT_DIR$/src/main/java/service/CourseServiceImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/ServiceFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/UserServiceImplement.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/login.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/register.js" />
+        <option value="$PROJECT_DIR$/src/main/java/servlet/Servlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/register.jsp" />
       </list>
     </option>
   </component>
@@ -592,9 +741,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="467" />
-    <option name="width" value="1409" />
-    <option name="height" value="868" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -602,17 +752,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="1.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="pjmooc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="1.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pjmooc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="document" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="1.0" type="b2602c69:ProjectViewProjectNode" />
@@ -660,6 +806,37 @@
               <item name="1.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="pjmooc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pjmooc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pjmooc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pjmooc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="1.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pjmooc" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -678,7 +855,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -687,6 +863,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -706,43 +883,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestAnswerDAO.test">
+  <component name="RunManager" selected="JUnit.TestService.test">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="pjmooc [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="pjmooc [war]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="war" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
     </configuration>
     <configuration name="TestAnswerDAO.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="1.0_test" />
@@ -761,14 +904,14 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestDbUtil" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="1.0_main" />
+    <configuration name="TestDbUtil.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="1.0_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestDbUtil" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -784,6 +927,40 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestDbUtil" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestJson.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="1.0_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestJson" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestService.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="1.0_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestService" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -834,7 +1011,7 @@
       <listeners />
     </configuration>
     <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.53" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <deployment>
         <artifact name="Gradle : 130017.02 : 1.0-1.0-SNAPSHOT.war (exploded)">
           <settings>
@@ -906,19 +1083,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Unnamed" />
-      <item itemvalue="Gradle.pjmooc [build]" />
-      <item itemvalue="Gradle.pjmooc [war]" />
-      <item itemvalue="JUnit.TestDbUtil" />
       <item itemvalue="JUnit.TestDbUtil.test" />
       <item itemvalue="JUnit.TestAnswerDAO.test" />
+      <item itemvalue="JUnit.TestJson.test" />
+      <item itemvalue="JUnit.TestDbUtil.test (1)" />
+      <item itemvalue="JUnit.TestService.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestService.test" />
+        <item itemvalue="JUnit.TestDbUtil.test (1)" />
+        <item itemvalue="JUnit.TestJson.test" />
         <item itemvalue="JUnit.TestAnswerDAO.test" />
         <item itemvalue="JUnit.TestDbUtil.test" />
-        <item itemvalue="JUnit.TestDbUtil" />
-        <item itemvalue="Gradle.pjmooc [war]" />
-        <item itemvalue="Gradle.pjmooc [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -939,6 +1116,10 @@
       <workItem from="1532443173482" duration="6181000" />
       <workItem from="1532594902536" duration="8290000" />
       <workItem from="1532612423347" duration="14669000" />
+      <workItem from="1532790499870" duration="34544000" />
+      <workItem from="1532933397068" duration="36761000" />
+      <workItem from="1533098756647" duration="46000" />
+      <workItem from="1533099596590" duration="11091000" />
     </task>
     <task id="LOCAL-00001" summary="huaq">
       <created>1532099547129</created>
@@ -1024,43 +1205,50 @@
       <option name="project" value="LOCAL" />
       <updated>1532776279183</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Merge remote-tracking branch 'remotes/origin/master' into chy&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/dao/Course_pageDAOImplement.java&#10;#&#9;src/main/java/dao/Course_tableDAOImplement.java&#10;#&#9;src/main/java/dao/Discussion_boardDAOImplement.java&#10;#&#9;src/test/java/TestAnswerDAO.java">
+      <created>1532931280450</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1532931280450</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestDbUtil_test - 2018.07.26 at 18h 17m 13s.xml">
-      <configuration name="TestDbUtil.test" configurationId="JUnit" />
+    <history-entry file="TestService_test - 2018.07.31 at 22h 31m 24s.xml">
+      <configuration name="TestService.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDbUtil_test - 2018.07.26 at 18h 18m 09s.xml">
-      <configuration name="TestDbUtil.test" configurationId="JUnit" />
+    <history-entry file="TestService_test - 2018.07.31 at 23h 47m 35s.xml">
+      <configuration name="TestService.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDbUtil_test - 2018.07.26 at 19h 59m 58s.xml">
-      <configuration name="TestDbUtil.test" configurationId="JUnit" />
+    <history-entry file="TestService_test - 2018.08.01 at 02h 56m 08s.xml">
+      <configuration name="TestService.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDbUtil_test - 2018.07.26 at 20h 00m 15s.xml">
-      <configuration name="TestDbUtil.test" configurationId="JUnit" />
+    <history-entry file="TestService_test - 2018.08.01 at 14h 23m 59s.xml">
+      <configuration name="TestService.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDbUtil_test - 2018.07.26 at 20h 00m 38s.xml">
-      <configuration name="TestDbUtil.test" configurationId="JUnit" />
+    <history-entry file="TestService_test - 2018.08.01 at 14h 24m 37s.xml">
+      <configuration name="TestService.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDbUtil_test - 2018.07.26 at 20h 01m 39s.xml">
-      <configuration name="TestDbUtil.test" configurationId="JUnit" />
+    <history-entry file="TestService_test - 2018.08.01 at 14h 24m 59s.xml">
+      <configuration name="TestService.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestDbUtil_test - 2018.07.26 at 21h 49m 13s.xml">
-      <configuration name="TestDbUtil.test" configurationId="JUnit" />
+    <history-entry file="TestService_test - 2018.08.01 at 14h 25m 12s.xml">
+      <configuration name="TestService.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAnswerDAO_test - 2018.07.28 at 16h 39m 20s.xml">
-      <configuration name="TestAnswerDAO.test" configurationId="JUnit" />
+    <history-entry file="TestService_test - 2018.08.01 at 14h 26m 05s.xml">
+      <configuration name="TestService.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAnswerDAO_test - 2018.07.28 at 16h 40m 53s.xml">
-      <configuration name="TestAnswerDAO.test" configurationId="JUnit" />
+    <history-entry file="TestService_test - 2018.08.01 at 14h 30m 47s.xml">
+      <configuration name="TestService.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAnswerDAO_test - 2018.07.28 at 16h 44m 06s.xml">
-      <configuration name="TestAnswerDAO.test" configurationId="JUnit" />
+    <history-entry file="TestService_test - 2018.08.01 at 14h 58m 08s.xml">
+      <configuration name="TestService.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47962000" />
+    <option name="totallyTimeSpent" value="131096000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1076,103 +1264,40 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50067025" side_tool="true" weight="0.32673267" />
-      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32956153" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297587" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5013405" side_tool="true" weight="0.562942" />
+      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32956153" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.3297587" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.2627346" />
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.14075068" />
+      <window_info id="Structure" order="0" sideWeight="0.5046512" side_tool="true" weight="0.24798928" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5304102" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32956153" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="4" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32956153" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932975" weight="0.32673267" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32673267" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32956153" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32673267" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.4986631" visible="true" weight="0.1769437" />
-      <window_info id="Web" order="5" sideWeight="0.5013369" side_tool="true" weight="0.41657922" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info anchor="right" id="Gradle" order="3" weight="0.1689008" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28995755" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.4986631" visible="true" weight="0.1769437" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.32956153" />
-      <window_info anchor="right" id="Gradle" order="3" weight="0.1689008" />
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297587" />
-      <window_info id="Web" order="5" sideWeight="0.5013369" side_tool="true" weight="0.41657922" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Image Layers" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.2627346" />
-      <window_info id="Capture Tool" order="1" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32673267" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
-      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32956153" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32956153" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.23055163" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32956153" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info id="Designer" order="2" />
-    </layout>
-    <layout-to-restore>
-      <window_info anchor="bottom" id="Build" order="7" weight="0.23055163" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Application Servers" order="15" weight="0.32956153" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32956153" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.54031116" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32956153" />
-      <window_info id="Capture Tool" order="1" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32956153" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32956153" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32956153" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Image Layers" order="4" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32956153" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32673267" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.47524753" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32531825" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32909605" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.8553459" visible="true" weight="0.2546917" />
+      <window_info id="Web" order="5" sideWeight="0.1446541" side_tool="true" weight="0.24798928" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
       <window_info anchor="right" id="Gradle" order="6" weight="0.1689008" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.4986631" visible="true" weight="0.19839142" />
-      <window_info anchor="right" id="Database" order="7" weight="0.35723862" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32673267" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Build" order="11" weight="0.23055163" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Web" order="5" sideWeight="0.5013369" side_tool="true" weight="0.41657922" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-    </layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1217,381 +1342,396 @@
     <MESSAGE value="erd" />
     <MESSAGE value="dao changes" />
     <MESSAGE value="service" />
-    <option name="LAST_COMMIT_MESSAGE" value="service" />
+    <MESSAGE value="Merge remote-tracking branch 'remotes/origin/master' into chy&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/dao/Course_pageDAOImplement.java&#10;#&#9;src/main/java/dao/Course_tableDAOImplement.java&#10;#&#9;src/main/java/dao/Discussion_boardDAOImplement.java&#10;#&#9;src/test/java/TestAnswerDAO.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'remotes/origin/master' into chy&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/dao/Course_pageDAOImplement.java&#10;#&#9;src/main/java/dao/Course_tableDAOImplement.java&#10;#&#9;src/main/java/dao/Discussion_boardDAOImplement.java&#10;#&#9;src/test/java/TestAnswerDAO.java" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="12" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="DbUtil.flag" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>DbUtil.flag</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Entity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/UserBean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/SearchServlet.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/SignServlet.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/StatisticsServlet.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runner/JUnitCore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="13">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/Servlet.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="112">
+          <caret line="370" selection-start-line="370" selection-end-line="370" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/statements/InvokeMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        <state relative-caret-position="170">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+        <state relative-caret-position="44">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="101">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/Servlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/Servlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/Servlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/classes/java/main/servlet/Servlet.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/89d19cf4-8bbd-488f-966e-a0c8eca5f610/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/Servlet2.java" />
-    <entry file="das://89d19cf4-8bbd-488f-966e-a0c8eca5f610/schema/fdmooc/table/user" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Entity.java" />
-    <entry file="file://$PROJECT_DIR$/.idea/dataSources/89d19cf4-8bbd-488f-966e-a0c8eca5f610.xml" />
-    <entry file="das://89d19cf4-8bbd-488f-966e-a0c8eca5f610/schema/fdmooc/table/course_table" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        <state relative-caret-position="551">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b496dc69-1c9f-44d9-934e-a31d50b1dce0/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/nav.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/60898e5c-0e60-4afa-a3fc-f6d6b8befe8a/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        <state relative-caret-position="445">
+          <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fb5790b7-f347-4f45-aa97-2baadc5bfe0e/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/Servlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/DAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <element signature="e#87#88#0" expanded="true" />
-            <element signature="e#132#133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/TestDbUtil.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/UserServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/UserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="method#UserBean#1;class#UserBean#0" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1022#1023#0" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1186#1187#0" expanded="true" />
-            <element signature="e#1234#1235#0" expanded="true" />
-            <element signature="e#1274#1275#0" expanded="true" />
-            <element signature="e#1312#1313#0" expanded="true" />
-            <element signature="e#1342#1343#0" expanded="true" />
-            <element signature="e#1390#1391#0" expanded="true" />
-            <element signature="e#1430#1431#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/ServiceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/DbUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/434c8ab7-6a4f-4e3c-ad4b-32c0db83f777/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/AnswerBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
-          <folding>
-            <element signature="e#87#88#0" expanded="true" />
-            <element signature="e#161#162#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestAnswerDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/AnswerDAOImplement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/UserSevice.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Course_pageDAOImplement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="412">
+          <caret line="128" column="37" selection-start-line="128" selection-start-column="37" selection-end-line="128" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/UserServiceImplement.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Course_tableDAOImplement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="494">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/MessageUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/AnswerDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/CourseDAOImplement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-665">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAOImplement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/HomeworkDAOImplement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/RecordDAOImplement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ResourceDAOImplement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://434c8ab7-6a4f-4e3c-ad4b-32c0db83f777/schema/fdmooc/table/answer">
+    <entry file="das://434c8ab7-6a4f-4e3c-ad4b-32c0db83f777/schema/fdmooc/table/record">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Course_tableDAOImplement.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/CourseDAOImplement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="39" column="64" lean-forward="true" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
+        <state relative-caret-position="212">
+          <caret line="120" column="37" selection-start-line="120" selection-start-column="37" selection-end-line="120" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDAOImplement.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Discussion_boardDAOImplement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="55" column="50" lean-forward="true" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
+        <state relative-caret-position="212">
+          <caret line="115" column="37" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/ResourceDAOImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1805">
+          <caret line="105" column="37" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/RecordDAOImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1523">
+          <caret line="91" column="31" lean-forward="true" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/HomeworkDAOImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="126" column="37" lean-forward="true" selection-start-line="126" selection-start-column="37" selection-end-line="126" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/coursepage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/nav.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/EncryptUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/forsession.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/MessageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="27" column="26" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/MailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="39" column="74" lean-forward="true" selection-start-line="39" selection-start-column="74" selection-end-line="39" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/coursepage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://434c8ab7-6a4f-4e3c-ad4b-32c0db83f777/schema/fdmooc/table/course">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://434c8ab7-6a4f-4e3c-ad4b-32c0db83f777/schema/fdmooc/table/course_table">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://434c8ab7-6a4f-4e3c-ad4b-32c0db83f777/schema/fdmooc/table/homework">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://434c8ab7-6a4f-4e3c-ad4b-32c0db83f777/schema/fdmooc/table/resource">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://434c8ab7-6a4f-4e3c-ad4b-32c0db83f777/schema/fdmooc/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://434c8ab7-6a4f-4e3c-ad4b-32c0db83f777/schema/fdmooc/table/course_page">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/AnswerDAOImplement.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/DbUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
+        <state relative-caret-position="388">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Course_pageDAOImplement.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/ServiceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding>
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/UserSevice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/CourseServiceImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="148" column="42" selection-start-line="148" selection-start-column="42" selection-end-line="148" selection-end-column="42" />
+          <folding>
+            <element signature="method#getCoursePageInfo#0;class#CourseServiceImplement#0" />
+            <element signature="method#modifyHomework#0;class#CourseServiceImplement#0" />
+            <element signature="method#getHomeworkInfo#0;class#CourseServiceImplement#0" />
+            <element signature="method#createCourseTable#0;class#CourseServiceImplement#0" />
+            <element signature="method#deleteCourseTable#0;class#CourseServiceImplement#0" />
+            <element signature="method#courseTableInfo#0;class#CourseServiceImplement#0" />
+            <element signature="method#createAnswer#0;class#CourseServiceImplement#0" />
+            <element signature="method#deleteAnswer#0;class#CourseServiceImplement#0" />
+            <element signature="method#modifyAnswer#0;class#CourseServiceImplement#0" />
+            <element signature="method#getAnswerInfo#0;class#CourseServiceImplement#0" />
+            <element signature="method#createRecord#0;class#CourseServiceImplement#0" />
+            <element signature="method#deleteRecord#0;class#CourseServiceImplement#0" />
+            <element signature="method#getRecordInfo#0;class#CourseServiceImplement#0" />
+            <element signature="method#createResource#0;class#CourseServiceImplement#0" />
+            <element signature="method#deleteResource#0;class#CourseServiceImplement#0" />
+            <element signature="method#modifyResource#0;class#CourseServiceImplement#0" />
+            <element signature="method#getResourceInfo#0;class#CourseServiceImplement#0" />
+            <element signature="method#getTopHotCourse#0;class#CourseServiceImplement#0" />
+            <element signature="method#getLatestCourse#0;class#CourseServiceImplement#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <caret line="14" selection-start-line="10" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/MailService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="285">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/UserServiceImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="83" column="51" lean-forward="true" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDAOImplement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlet/Servlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="27" column="104" selection-start-line="27" selection-start-column="104" selection-end-line="27" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="85" column="1" lean-forward="true" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
         </state>
       </provider>
     </entry>

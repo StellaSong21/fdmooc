@@ -16,7 +16,7 @@ public class ResourceDAOImplement implements ResourceDAO {
 
     @Override
     public int append(ResourceBean resourceBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "INSERT INTO `fdmooc`.`resource` (cid,url,`number`) VALUES (?, ?, ?)";
             PreparedStatement ppst = conn.prepareStatement(sql);
@@ -29,13 +29,14 @@ public class ResourceDAOImplement implements ResourceDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public int delete(ResourceBean resourceBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "DELETE FROM `fdmooc`.`resource` WHERE cid='" + resourceBean.getCid() + "'";
             if (StringUtil.isNotEmpty(resourceBean.getNumber())) {
@@ -48,13 +49,14 @@ public class ResourceDAOImplement implements ResourceDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public int modify(ResourceBean resourceBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "UPDATE `fdmooc`.`resource` SET url=? WHERE cid=? AND number=?";
             PreparedStatement ppst = conn.prepareStatement(sql);
@@ -67,20 +69,19 @@ public class ResourceDAOImplement implements ResourceDAO {
             return re;
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return -1;
         }
     }
 
     @Override
     public List<Map<String, String>> infoList(ResourceBean resourceBean) {
-        Connection conn = DbUtil.getConnecction();
+        Connection conn = DbUtil.getConnection();
         try {
             String sql = "SELECT * FROM `fdmooc`.`resource` ";
             String match = "";
             if (!StringUtil.isEmpty(resourceBean.getCid()))
                 match += "AND cid='" + resourceBean.getCid() + "' ";
-            if (!StringUtil.isEmpty(resourceBean.getUrl()))
-                match += "AND url='" + resourceBean.getUrl() + "' ";
             if (!StringUtil.isEmpty(resourceBean.getNumber()))
                 match += "AND `number`='" + resourceBean.getNumber() + "' ";
 
@@ -102,6 +103,7 @@ public class ResourceDAOImplement implements ResourceDAO {
 
         } catch (Exception e) {
             e.printStackTrace();
+            DbUtil.closeConnection();
             return null;
         }
     }
