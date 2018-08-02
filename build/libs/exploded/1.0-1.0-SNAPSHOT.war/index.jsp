@@ -1,19 +1,27 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
+<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>MOOC</title>
 
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js"></script>
 </head>
 <body>
-<%
-    out.print(session.getAttribute("username"));
-%>
+<script>
+    $(function () {
+        console.log(sessionStorage.getItem("username"));
+    })
+</script>
+<%@ include file ="nav.jsp"%>
+
 <div id="top-hot">
     <h3>热门课程</h3>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -39,24 +47,11 @@
         </a>
     </div>
 </div>
-<div id="latest-course" >
+<div id="latest-course">
     <h3>最近发布</h3>
     <div class="row" id="latest-course-list">
-    <%--<div id="latest1" class="col-lg-3">--%>
-        <%--<img src="http://pic15.nipic.com/20110803/4402430_123201163000_2.jpg">--%>
-        <%--<h6>course 1</h6>--%>
-        <%--<p>aaebpiv v fvlnea fs eivgnljlf sb nfvsheb ioia;eavn o sjfc</p>--%>
-    <%--</div>--%>
-    <%--<div id="latest2" class="col-lg-3">--%>
-        <%--<img src="">--%>
-        <%--<h5>course 2</h5>--%>
-        <%--<p>aaebpiv v fvlnea fs eivgnljlf sb nfvsheb ioia;eavn o sjfc</p>--%>
-    <%--</div>--%>
-    <%--<div id="latest3" class="col-lg-3">--%>
-        <%--<img src="">--%>
-        <%--<h5>course 3</h5>--%>
-        <%--<p>aaebpiv v fvlnea fs eivgnljlf sb nfvsheb ioia;eavn o sjfc</p>--%>
-    <%--</div>--%>
+
+
     </div>
 </div>
 </body>

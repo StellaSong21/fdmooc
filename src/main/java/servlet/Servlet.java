@@ -24,7 +24,7 @@ public class Servlet extends HttpServlet {
             param.addProperty(e.getKey(), e.getValue()[0]);
         System.out.println(param.toString());
         switch (request.getParameter("type")) {
-            case "page":
+            case "pagelist":
                 pw.print(ServiceFactory.getCourseServiceInstance(param).getCoursePageInfo());
                 break;
             case "add_record":
@@ -47,6 +47,60 @@ public class Servlet extends HttpServlet {
                 break;
             case "register":
                 pw.print(ServiceFactory.getUserServiceInstance(param).register());
+                break;
+            case "board":
+                pw.print(ServiceFactory.getDiscussionInstance(param).boardInfo());
+                break;
+            case "add_board":
+                pw.print(ServiceFactory.getDiscussionInstance(param).append());
+                break;
+            case "courseinfo":
+                pw.print(ServiceFactory.getCourseServiceInstance(param).getCourseInfo());
+                break;
+            case "resourcelist":
+                pw.print(ServiceFactory.getCourseServiceInstance(param).getResourceInfo());
+                break;
+            case "homeworklist":
+                pw.print(ServiceFactory.getCourseServiceInstance(param).getHomeworkInfo());
+                break;
+            case "userinfo":
+                pw.print(ServiceFactory.getUserServiceInstance(param).userInfo());
+                break;
+            case "homework":
+                pw.print(ServiceFactory.getCourseServiceInstance(param).doHomework());
+                break;
+            case "aresource":
+                pw.print(ServiceFactory.getCourseServiceInstance(param).createResource());
+                break;
+            case "dresource":
+                pw.print(ServiceFactory.getCourseServiceInstance(param).deleteResource());
+                break;
+            case "mresource":
+                pw.print(ServiceFactory.getCourseServiceInstance(param).modifyResource());
+                break;
+            case "page":
+                pw.print(ServiceFactory.getCourseServiceInstance(param).doPage());
+                break;
+            case "course":
+                pw.print(ServiceFactory.getCourseServiceInstance(param).doCourse());
+                break;
+            case "hasJoin":
+                pw.print(ServiceFactory.getCourseServiceInstance(param).courseTableInfo().has("0"));
+                break;
+            case "joincourse":
+                pw.print(ServiceFactory.getCourseServiceInstance(param).createCourseTable());
+                break;
+            case "dropoutcourse":
+                pw.print(ServiceFactory.getCourseServiceInstance(param).deleteCourseTable());
+                break;
+            case "countrecord":
+                pw.print(ServiceFactory.getCourseServiceInstance(param).getRecordInfo());
+                break;
+            case "search":
+                pw.print(ServiceFactory.getCourseServiceInstance(param).getCourseList());
+                break;
+            case "answer":
+                pw.print(ServiceFactory.getCourseServiceInstance(param).doAnswer());
                 break;
         }
         pw.flush();

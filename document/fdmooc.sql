@@ -23,10 +23,10 @@ DROP TABLE IF EXISTS `answer`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `answer` (
-  `uid` int(11) NOT NULL,
-  `hid` int(11) NOT NULL,
-  `content` text NOT NULL,
-  `grade` int(11) DEFAULT NULL
+  `username` int(11) NOT NULL,
+  `hid`      int(11) NOT NULL,
+  `content`  text    NOT NULL,
+  `grade`    int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -99,8 +99,8 @@ DROP TABLE IF EXISTS `course_table`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `course_table` (
-  `cid` int(11) NOT NULL,
-  `uid` int(11) NOT NULL
+  `cid`      int(11) NOT NULL,
+  `username` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -171,9 +171,9 @@ DROP TABLE IF EXISTS `record`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `record` (
-  `uid` int(11) NOT NULL,
-  `cid` int(11) NOT NULL,
-  `pid` int(11) NOT NULL
+  `username` int(11) NOT NULL,
+  `cid`      int(11) NOT NULL,
+  `pid`      int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -216,12 +216,12 @@ DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `user` (
-  `uid` int(11) NOT NULL AUTO_INCREMENT,
-  `username` text NOT NULL,
-  `nickname` text NOT NULL,
-  `password` text NOT NULL,
+  `username`  int(11) NOT NULL AUTO_INCREMENT,
+  `did`       text    NOT NULL,
+  `nickname`  text    NOT NULL,
+  `password`  text    NOT NULL,
   `authority` int(11) NOT NULL,
-  PRIMARY KEY (`uid`)
+  PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 

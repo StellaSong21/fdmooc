@@ -59,4 +59,14 @@ public abstract class CourseService {
     public abstract JsonObject getTopHotCourse();
 
     public abstract JsonObject getLatestCourse();
+
+    public abstract int doHomework();
+
+    public abstract int doPage();
+
+    public abstract int doCourse();
+
+    public abstract JsonObject getCourseList();
+
+    public abstract JsonObject doAnswer();
 }

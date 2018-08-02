@@ -66,7 +66,7 @@ public class CourseServiceImplement extends CourseService {
     @Override
     public int modifyCourse() {
         String title = "", teacher_id = "", pic_url = "", content = "";
-        String cid = jsonObject.get("pid").getAsString();
+        String cid = jsonObject.get("cid").getAsString();
         if (jsonObject.has("teacher_id"))
             teacher_id = jsonObject.get("teacher_id").getAsString();
         if (jsonObject.has("title"))
@@ -101,6 +101,30 @@ public class CourseServiceImplement extends CourseService {
         return jsonObject;
     }
 
+    public JsonObject getCourseList() {
+        String cid = jsonObject.get("cid").getAsString();
+        CourseBean course = new CourseBean();
+        course.setCid(cid);
+        List<Map<String, String>> list = courseDAO.infoList(course);
+
+        JsonObject jsonObject = new JsonObject();
+
+        if (list == null) return jsonObject;
+        Map<String, String> map;
+        for (int i = 0; i < list.size(); i++) {
+            map = list.get(i);
+            JsonObject j = new JsonObject();
+            j.addProperty("cid", map.get("cid"));
+            j.addProperty("title", map.get("title"));
+            j.addProperty("teacher_id", map.get("teacher_id"));
+            j.addProperty("pic_url", map.get("pic_url"));
+            j.addProperty("content", map.get("content"));
+            jsonObject.add(i + "", j);
+        }
+
+        return jsonObject;
+    }
+
     @Override
     public int createCoursePage() {
         String cid = jsonObject.get("cid").getAsString();
@@ -123,8 +147,8 @@ public class CourseServiceImplement extends CourseService {
 
     @Override
     public int deleteCoursePage() {
-        String cid = jsonObject.get("cid").getAsString();
-        if (course_pageDAO.delete(cid) == -1)
+        String pid = jsonObject.get("pid").getAsString();
+        if (course_pageDAO.delete(pid) == -1)
             return 0x020207;
         return 0x020200;
     }
@@ -179,7 +203,7 @@ public class CourseServiceImplement extends CourseService {
         String title = jsonObject.get("title").getAsString();
         String content = jsonObject.get("content").getAsString();
 
-        if (homeworkDAO.append(new HomeworkBean(cid, title, content, start_time, end_time)) == -1)
+        if (homeworkDAO.append(new HomeworkBean(start_time, title, content, end_time, cid)) == -1)
             return 0x020101;
 
         HomeworkBean homeworkBean = new HomeworkBean();
@@ -210,7 +234,7 @@ public class CourseServiceImplement extends CourseService {
             title = jsonObject.get("title").getAsString();
         if (jsonObject.has("content"))
             content = jsonObject.get("content").getAsString();
-        return homeworkDAO.modify(new HomeworkBean(hid, "", title, content, start_time, end_time)) == -1 ? 0x020301 : 0x020300;
+        return homeworkDAO.modify(new HomeworkBean(hid, start_time, title, content, end_time, "")) == -1 ? 0x020301 : 0x020300;
     }
 
     @Override
@@ -374,10 +398,10 @@ public class CourseServiceImplement extends CourseService {
         RecordBean recordBean = new RecordBean();
         if (jsonObject.has("cid"))
             recordBean.setCid(jsonObject.get("cid").getAsString());
-        if (jsonObject.has("uid"))
-            recordBean.setUid(jsonObject.get("uid").getAsString());
-        if (jsonObject.has("pid"))
-            recordBean.setPid(jsonObject.get("pid").getAsString());
+//        if (jsonObject.has("uid"))
+//            recordBean.setUid(jsonObject.get("uid").getAsString());
+//        if (jsonObject.has("pid"))
+//            recordBean.setPid(jsonObject.get("pid").getAsString());
         List<Map<String, String>> list = recordDAO.infoList(recordBean);
 
         JsonObject jsonObject = new JsonObject();
@@ -389,9 +413,9 @@ public class CourseServiceImplement extends CourseService {
             map = list.get(i);
             JsonObject j = new JsonObject();
             j.addProperty("uid", map.get("uid"));
-            j.addProperty("hid", map.get("hid"));
-            j.addProperty("pid", map.get("pid"));
-            jsonObject.add(i + "", j);
+            j.addProperty("nickname", map.get("nickname"));
+            j.addProperty("count", map.get("count(pid)"));
+            jsonObject.add((i + 1) + "", j);
         }
 
         return jsonObject;
@@ -480,7 +504,7 @@ public class CourseServiceImplement extends CourseService {
             }
         });
         //System.out.println(result.toString());
-        int size = result.size() > 3 ? result.size() : 3;
+        int size = result.size() > 3 ? 3 : result.size();
         int i = result.size() - 1;
         for (int k = 0; k < size; i--, k++) {
             Map.Entry<String, Integer> e = result.get(i);
@@ -510,7 +534,7 @@ public class CourseServiceImplement extends CourseService {
 
         if (list == null) return jsonObject;
 
-        int size = list.size() > 3 ? list.size() : 3;
+        int size = list.size() > 3 ? 3 : list.size();
         int i = list.size() - 1;
         for (int k = 0; k < size; i--, k++) {
             Map<String, String> map = list.get(i);
@@ -524,6 +548,50 @@ public class CourseServiceImplement extends CourseService {
         }
 
         return jsonObject;
+    }
+
+    @Override
+    public int doHomework() {
+        if (jsonObject.has("hid")) {
+            if (jsonObject.has("title"))
+                return modifyHomework();
+            else
+                return deleteHomework();
+        } else
+            return createHomework();
+    }
+
+    @Override
+    public int doPage() {
+        if (jsonObject.has("pid")) {
+            if (jsonObject.has("title"))
+                return modifyCoursePage();
+            else
+                return deleteCoursePage();
+        } else
+            return createCoursePage();
+    }
+
+    @Override
+    public int doCourse() {
+        if (jsonObject.has("cid")) {
+            if (jsonObject.has("title"))
+                return modifyCourse();
+            else
+                return deleteCourse();
+        } else
+            return deleteCourse();
+    }
+
+    public JsonObject doAnswer() {
+        if (jsonObject.has("content") || jsonObject.has("grade")) {
+            if (getAnswerInfo().has("0"))
+                modifyAnswer();
+            else
+                createAnswer();
+        } else
+            return getAnswerInfo();
+        return null;
     }
 
 }

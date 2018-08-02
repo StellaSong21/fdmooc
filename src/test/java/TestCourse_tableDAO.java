@@ -18,6 +18,6 @@ public class TestCourse_tableDAO {
 //        List<Map<String, String>> result = course_tableDAO.infoList(Course_tableBean);
 //        assertNotNull(result);
 //        Map<String, String> m = result.get(0);
-//        assertEquals(Course_tableBean.getUid(), m.get("uid"));
+//        assertEquals(Course_tableBean.getUsername(), m.get("uid"));
     }
 }

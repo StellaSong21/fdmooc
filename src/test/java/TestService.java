@@ -1,6 +1,6 @@
 import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import org.junit.Test;
-import service.CourseService;
 import service.ServiceFactory;
 
 public class TestService {
@@ -9,16 +9,19 @@ public class TestService {
         //System.out.println(ServiceFactory.getCourseServiceInstance().getTopHotCourse());
         //System.out.println(ServiceFactory.getCourseServiceInstance().getLatestCourse());
         //DAOFactory.getCourseDAOInstance().delete("1");
-        JsonObject j = new JsonObject();
-        j.addProperty("cid", "13");
-        //ServiceFactory.getDiscussionInstance(j).append();
-        CourseService cs = ServiceFactory.getCourseServiceInstance(j);
-        System.out.println(cs.getCourseInfo());
-        System.out.println(cs.getCoursePageInfo());
-        System.out.println(cs.getResourceInfo());
-        System.out.println(cs.getHomeworkInfo());
-        JsonObject j1 = new JsonObject();
-        j1.addProperty("uid", "1");
-        System.out.println(ServiceFactory.getUserServiceInstance(j1).userInfo());
+//        JsonObject j = new JsonObject();
+//        j.addProperty("cid", "2");
+//        //ServiceFactory.getDiscussionInstance(j).append();
+//        CourseService cs = ServiceFactory.getCourseServiceInstance(j);
+////        System.out.println(cs.getCourseInfo());
+////        System.out.println(cs.getCoursePageInfo());
+////        System.out.println(cs.getResourceInfo());
+//        //System.out.println(cs.getHomeworkInfo());
+//        System.out.println(cs.getRecordInfo());
+//        JsonObject j1 = new JsonObject();
+//        j1.addProperty("uid", "1");
+//        System.out.println(ServiceFactory.getDiscussionInstance(new JsonObject()).boardInfo());
+        JsonObject j = new JsonParser().parse("{\"type\":\"hasJoin\",\"uid\":\"2\",\"cid\":\"3\"}").getAsJsonObject();
+        System.out.println(ServiceFactory.getCourseServiceInstance(j).courseTableInfo());
     }
 }

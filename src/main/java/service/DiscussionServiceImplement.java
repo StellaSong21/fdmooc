@@ -22,7 +22,7 @@ public class DiscussionServiceImplement extends DiscussionService {
     @Override
     public int append() {
         String content = jsonObject.get("content").getAsString();
-        String uid = jsonObject.get("uid").getAsString();
+        String uid = jsonObject.get("username").getAsString();
         String time = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
 
         if (discussion_boardDAO.append(new Discussion_boardBean(content, time, uid)) == -1)
@@ -45,7 +45,7 @@ public class DiscussionServiceImplement extends DiscussionService {
             j.addProperty("did", map.get("did"));
             j.addProperty("content", map.get("content"));
             j.addProperty("time", map.get("time"));
-            j.addProperty("uid", map.get("uid"));
+            j.addProperty("username", map.get("username"));
             jsonObject.add(i + "", j);
         }
 

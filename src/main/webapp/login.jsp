@@ -19,6 +19,11 @@
     <script src="js/login.js"></script>
 </head>
 <body>
+<script>
+    if (sessionStorage.getItem("username") !== null) {
+        $(location).attr("href", "http://localhost:8080/index.jsp");
+    }
+</script>
 <div class="card">
     <h1><span class="label label-primary">LOGIN</span></h1>
     <div class="container card-body">

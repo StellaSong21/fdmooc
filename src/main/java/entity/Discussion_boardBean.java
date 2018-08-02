@@ -4,22 +4,22 @@ public class Discussion_boardBean {
     private String did;
     private String content;
     private String time;
-    private String uid;
+    private String username;
 
     public Discussion_boardBean() {
     }
 
-    public Discussion_boardBean(String did, String content, String time, String uid) {
+    public Discussion_boardBean(String did, String content, String time, String username) {
         this.did = did;
         this.content = content;
         this.time = time;
-        this.uid = uid;
+        this.username = username;
     }
 
-    public Discussion_boardBean(String content, String time, String uid) {
+    public Discussion_boardBean(String content, String time, String username) {
         this.content = content;
         this.time = time;
-        this.uid = uid;
+        this.username = username;
     }
 
     public String getDid() {
@@ -46,11 +46,11 @@ public class Discussion_boardBean {
         this.time = time;
     }
 
-    public String getUid() {
-        return uid;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUid(String uid) {
-        this.uid = uid;
+    public void setUsername(String username) {
+        this.username = username;
     }
 }

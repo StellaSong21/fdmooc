@@ -9,8 +9,8 @@ public class ComparatorCoursePage implements Comparator {
     public int compare(Object o1, Object o2) {
         Course_pageBean c1 = (Course_pageBean) o1;
         Course_pageBean c2 = (Course_pageBean) o2;
-        String[] l1 = c1.getNumber().split(".");
-        String[] l2 = c2.getNumber().split(".");
+        String[] l1 = c1.getNumber().split("\\.");
+        String[] l2 = c2.getNumber().split("\\.");
         for (int i = 0; i < l1.length && i < l2.length; i++) {
             int flag = l1[i].compareTo(l2[i]);
             if (flag != 0)

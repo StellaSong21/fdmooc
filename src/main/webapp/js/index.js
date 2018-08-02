@@ -4,12 +4,11 @@ $.post("Servlet", {
     function (data) {
         let list = JSON.parse(data)
         console.log(data);
-        //TODO:img title href=""
         $.each(list, function (name, value) {
             let str =
-                "                <img src=\"" + value.pic_url + "\">\n" +
+                "                <img style=\"background:url(" + value.pic_url + ") no-repeat\" >" +
                 "                <div class=\"carousel-caption\">\n" +
-                "                    <h3>" + value.title + "</h3>\n" +
+                "                    <a href=\"course.jsp?course=" + value.title + "&cid=" + value.cid + "\"><h3>" + value.title + "</h3></a>\n" +
                 "                    <p>" + value.content + "</p>\n" +
                 "                </div>";
 
@@ -28,11 +27,10 @@ $.post("Servlet", {
     function (data) {
         let list = JSON.parse(data)
         console.log(data);
-        //TODO:img title href=""
         $.each(list, function (name, value) {
             let str =
-                "<img src=\"" + value.pic_url + "\">\n" +
-                "        <h6>" + value.title + "</h6>\n" +
+                "<a href=\"course.jsp?course=" + value.title + "&cid=" + value.cid + "\"><img src=\"" + value.pic_url + "\"></a>\n" +
+                "        <a href=\"course.jsp?course=" + value.title + "&cid=" + value.cid + "\"><h5>" + value.title + "</h5></a>\n" +
                 "        <p>" + value.content + "</p>";
 
             let div = document.createElement("div");
@@ -42,3 +40,9 @@ $.post("Servlet", {
             $(".row")[0].appendChild(div);
         });
     });
+
+function logout() {
+    sessionStorage.removeItem("uid");
+    sessionStorage.removeItem("username");
+
+}

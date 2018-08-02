@@ -64,17 +64,7 @@ public class RecordDAOImplement implements RecordDAO {
     public List<Map<String, String>> infoList(RecordBean recordBean) {
         Connection conn = DbUtil.getConnection();
         try {
-            String sql = "SELECT * FROM `fdmooc`.`record` ";
-            String match = "";
-            if (StringUtil.isNotEmpty(recordBean.getUid()))
-                match += "AND uid='" + recordBean.getUid() + "' ";
-            if (StringUtil.isNotEmpty(recordBean.getCid()))
-                match += "AND cid='" + recordBean.getCid() + "' ";
-            if (StringUtil.isNotEmpty(recordBean.getPid()))
-                match += "AND pid='" + recordBean.getPid() + "' ";
-
-            if (!match.isEmpty())
-                sql += "WHERE " + match.substring(3);
+            String sql = "select count(pid), nickname, record.uid from user, record where cid=" + recordBean.getCid() + " and user.uid=record.uid group by record.uid order by count(pid) desc, record.uid;";
 
             PreparedStatement ps = conn.prepareStatement(sql);
             ResultSet re = ps.executeQuery();
@@ -82,9 +72,9 @@ public class RecordDAOImplement implements RecordDAO {
             List<Map<String, String>> result = new ArrayList<>();
             while (re.next()) {
                 Map<String, String> map = new HashMap<>();
+                map.put("count(pid)", re.getString("count(pid)"));
                 map.put("uid", re.getString("uid"));
-                map.put("cid", re.getString("cid"));
-                map.put("pid", re.getString("pid"));
+                map.put("nickname", re.getString("nickname"));
                 result.add(map);
             }
             return result;

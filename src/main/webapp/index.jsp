@@ -1,4 +1,5 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
+<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -14,9 +15,13 @@
     <script src="js/index.js"></script>
 </head>
 <body>
-<%
-    out.print(session.getAttribute("username"));
-%>
+<script>
+    $(function () {
+        console.log(sessionStorage.getItem("username"));
+    })
+</script>
+<%@ include file="nav.jsp" %>
+
 <div id="top-hot">
     <h3>热门课程</h3>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -45,21 +50,8 @@
 <div id="latest-course">
     <h3>最近发布</h3>
     <div class="row" id="latest-course-list">
-        <%--<div id="latest1" class="col-lg-3">--%>
-        <%--<img src="http://pic15.nipic.com/20110803/4402430_123201163000_2.jpg">--%>
-        <%--<h6>course 1</h6>--%>
-        <%--<p>aaebpiv v fvlnea fs eivgnljlf sb nfvsheb ioia;eavn o sjfc</p>--%>
-        <%--</div>--%>
-        <%--<div id="latest2" class="col-lg-3">--%>
-        <%--<img src="">--%>
-        <%--<h5>course 2</h5>--%>
-        <%--<p>aaebpiv v fvlnea fs eivgnljlf sb nfvsheb ioia;eavn o sjfc</p>--%>
-        <%--</div>--%>
-        <%--<div id="latest3" class="col-lg-3">--%>
-        <%--<img src="">--%>
-        <%--<h5>course 3</h5>--%>
-        <%--<p>aaebpiv v fvlnea fs eivgnljlf sb nfvsheb ioia;eavn o sjfc</p>--%>
-        <%--</div>--%>
+
+
     </div>
 </div>
 </body>

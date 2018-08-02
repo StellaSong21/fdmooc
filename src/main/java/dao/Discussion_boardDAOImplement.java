@@ -18,11 +18,11 @@ public class Discussion_boardDAOImplement implements Discussion_boardDAO {
         Connection conn = DbUtil.getConnection();
 
         try {
-            String sql = "INSERT INTO `fdmooc`.`discussion_board` (content,`time`,uid) VALUES (?, ?, ?)";
+            String sql = "INSERT INTO `fdmooc`.`discussion_board` (content,`time`,username) VALUES (?, ?, ?)";
             PreparedStatement ppst = conn.prepareStatement(sql);
             ppst.setString(1, discussion_boardBean.getContent());
             ppst.setString(2, discussion_boardBean.getTime());
-            ppst.setString(3, discussion_boardBean.getUid());
+            ppst.setString(3, discussion_boardBean.getUsername());
 
             int re = ppst.executeUpdate();
             DbUtil.closeConnection();
@@ -60,8 +60,8 @@ public class Discussion_boardDAOImplement implements Discussion_boardDAO {
                 match += ", content='" + discussion_boardBean.getContent() + "' ";
             if (StringUtil.isNotEmpty(discussion_boardBean.getTime()))
                 match += ", time='" + discussion_boardBean.getTime() + "' ";
-            if (StringUtil.isNotEmpty(discussion_boardBean.getUid()))
-                match += ", uid='" + discussion_boardBean.getUid() + "' ";
+            if (StringUtil.isNotEmpty(discussion_boardBean.getUsername()))
+                match += ", username='" + discussion_boardBean.getUsername() + "' ";
 
             if (!match.isEmpty())
                 sql += match.substring(1);
@@ -91,8 +91,8 @@ public class Discussion_boardDAOImplement implements Discussion_boardDAO {
                 match += "AND content='" + discussion_boardBean.getContent() + "' ";
             if (StringUtil.isNotEmpty(discussion_boardBean.getTime()))
                 match += "AND time='" + discussion_boardBean.getTime() + "' ";
-            if (StringUtil.isNotEmpty(discussion_boardBean.getUid()))
-                match += "AND uid='" + discussion_boardBean.getUid() + "' ";
+            if (StringUtil.isNotEmpty(discussion_boardBean.getUsername()))
+                match += "AND username='" + discussion_boardBean.getUsername() + "' ";
 
             if (!match.isEmpty())
                 sql += "WHERE " + match.substring(3);
@@ -106,7 +106,7 @@ public class Discussion_boardDAOImplement implements Discussion_boardDAO {
                 map.put("did", re.getString("did"));
                 map.put("content", re.getString("content"));
                 map.put("time", re.getString("time"));
-                map.put("uid", re.getString("uid"));
+                map.put("username", re.getString("username"));
                 result.add(map);
             }
             return result;

@@ -20,6 +20,6 @@ public class TestUserDAO {
 //        List<Map<String, String>> result = userDAO.infoList(userBean);
 //        assertNotNull(result);
 //        Map<String, String> m = result.get(0);
-//        assertEquals(userBean.getUid(), m.get("uid"));
+//        assertEquals(userBean.getUsername(), m.get("uid"));
     }
 }
