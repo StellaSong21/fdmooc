@@ -20,7 +20,7 @@
         console.log(sessionStorage.getItem("username"));
     })
 </script>
-<%@ include file ="nav.jsp"%>
+<%@ include file="nav.jsp" %>
 
 <div id="top-hot">
     <h3>热门课程</h3>

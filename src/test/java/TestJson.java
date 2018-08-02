@@ -11,9 +11,9 @@ public class TestJson {
 //        DiscussionService ds = ServiceFactory.getDiscussionInstance(new JsonObject());
 //        System.out.println(ds.boardInfo().toString());
         JsonObject j = new JsonObject();
-        j.addProperty("cid", 2);
-        System.out.println(ServiceFactory.getCourseServiceInstance(j).getCoursePageInfo());
-        System.out.println(j.toString());
+        j.addProperty("tid", 2);
+        System.out.println(ServiceFactory.getCourseServiceInstance(j).doCourseInfo().toString());
+        //System.out.println(j.toString());
 
     }
 }

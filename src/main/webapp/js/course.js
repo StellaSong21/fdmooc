@@ -186,12 +186,12 @@ function select() {
 }
 
 $("#hlist").click(function () {
-    if ($("#uhlist").text() === "") {
+    if ($("#uhlist").html() === "") {
         for (let m = 0; m < hmwk.length; m++) {
             let li = document.createElement("li");
             let str;
             if (edit)
-                str = "<div class=\"l-div\"><p><a href=\"" + "homework.jsp?hid=" + hmwk[m][0] + "\"><h4>" + hmwk[m][2] + "</h4></a>" + hmwk[m][3] + "</p><a onclick=\"ahlistclick(" + m + ")\"><p>From: " + hmwk[m][4] + "<br>To: " + hmwk[m][5] + "</p><span class=\"glyphicon glyphicon-edit\"></span></a></div>";
+                str = "<div class=\"l-div\"><p><a href=\"" + "answer.jsp?hid=" + hmwk[m][0] + "\"><h4>" + hmwk[m][2] + "</h4></a>" + hmwk[m][3] + "</p><a onclick=\"ahlistclick(" + m + ")\"><p>From: " + hmwk[m][4] + "<br>To: " + hmwk[m][5] + "</p><span class=\"glyphicon glyphicon-edit\"></span></a></div>";
             else
                 str = "<div class=\"l-div\"><a href=\"" + "homework.jsp?hid=" + hmwk[m][0] + "\"><div class=\"l-div2\"><p><h4>" + hmwk[m][2] + "</h4>" + hmwk[m][3] + "</p><p>From: " + hmwk[m][4] + "<br>To: " + hmwk[m][5] + "</p></div></a></div>";
             li.innerHTML = str;
@@ -262,7 +262,7 @@ function ahlcdel(n) {
 }
 
 $("#rlist").click(function () {
-    if ($("#urlist").text() === "")
+    if ($("#urlist").html() === "")
         for (let m = 0; m < resource.length; m++) {
             let li = document.createElement("li");
 
@@ -353,7 +353,7 @@ function arlcdel(n) {
 }
 
 $("#clist").click(function () {
-    if ($("#ulist").text() === "")
+    if ($("#ulist").html() === "")
         for (let m = 0; m < content.length; m++) {
             let li = document.createElement("li");
 

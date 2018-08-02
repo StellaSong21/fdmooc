@@ -21,7 +21,7 @@ public class TestService {
 //        JsonObject j1 = new JsonObject();
 //        j1.addProperty("uid", "1");
 //        System.out.println(ServiceFactory.getDiscussionInstance(new JsonObject()).boardInfo());
-        JsonObject j = new JsonParser().parse("{\"type\":\"hasJoin\",\"uid\":\"2\",\"cid\":\"3\"}").getAsJsonObject();
-        System.out.println(ServiceFactory.getCourseServiceInstance(j).courseTableInfo());
+        JsonObject param = new JsonParser().parse("{\"type\":\"courseinfo\",\"title\":\"\",\"content\":\"\",\"name\":\"\",\"order\":\"hot\",\"choose\":\"desc\"}").getAsJsonObject();
+        System.out.println(ServiceFactory.getCourseServiceInstance(param).doCourseInfo());
     }
 }

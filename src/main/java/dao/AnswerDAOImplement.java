@@ -68,7 +68,15 @@ public class AnswerDAOImplement implements AnswerDAO {
 
             if (!match.isEmpty())
                 sql += "SET " + match.substring(1);
-            sql += "WHERE uid='" + answerBean.getUid() + "' AND hid='" + answerBean.getHid() + "'";
+
+            match = "";
+            if (StringUtil.isNotEmpty(answerBean.getHid()))
+                match += "AND hid='" + answerBean.getHid() + "' ";
+            if (StringUtil.isNotEmpty(answerBean.getUid()))
+                match += "AND uid='" + answerBean.getUid() + "' ";
+
+            if (!match.isEmpty())
+                sql += "WHERE " + match.substring(3);
 
             PreparedStatement ppst = conn.prepareStatement(sql);
 

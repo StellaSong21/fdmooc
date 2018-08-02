@@ -32,7 +32,7 @@
             if (sessionStorage.getItem("username") === "" || sessionStorage.getItem("username") === null)
                 $("#nav-jsp-user").html("<a style=\"color: lightcyan\" href=\"login.jsp\">登录</a>或<a style=\"color: lightcyan\" href=\"register.jsp\">注册</a>");
             else
-                $("#nav-jsp-user").html("<a style=\"color: lightcyan\" href=\"\">" + sessionStorage.getItem("username") + "</a>，<a style=\"color: lightcyan\" href=\"\" onclick=\"logout()\">登出</a>");
+                $("#nav-jsp-user").html("<a style=\"color: lightcyan\" href=\"person.jsp\">" + sessionStorage.getItem("username") + "</a>，<a style=\"color: lightcyan\" href=\"\" onclick=\"logout()\">登出</a>");
         </script>
     </div>
     <div class="col-lg-4">
@@ -40,7 +40,8 @@
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Search for..." id="nav-jsp-search-text">
             <span class="input-group-btn">
-                             <button class="btn btn-default" type="button" id="nav-jsp-search-button"
+                             <button class="btn btn-default" type="button" style="height: 2.47em;"
+                                     id="nav-jsp-search-button"
                                      onclick="search()"><span
                                      class="glyphicon glyphicon-search"></span></button>
                           </span>

@@ -41,16 +41,16 @@ public class CourseServiceImplement extends CourseService {
     @Override
     public int createCourse() {
         String title = jsonObject.get("title").getAsString();
-        String tracher_id = jsonObject.get("teacher_id").getAsString();
+        String teacher_id = jsonObject.get("teacher_id").getAsString();
         String pic_url = jsonObject.get("pic_url").getAsString();
         String content = jsonObject.get("content").getAsString();
 
-        if (courseDAO.append(new CourseBean(title, tracher_id, pic_url, content)) == -1)
+        if (courseDAO.append(new CourseBean(title, teacher_id, pic_url, content)) == -1)
             return 0x020101;
 
-        CourseBean course = new CourseBean();
-        course.setTeacher_uid(tracher_id);
-        List<Map<String, String>> list = courseDAO.infoList(course);
+        CourseBean c = new CourseBean();
+        c.setTeacher_uid(teacher_id);
+        List<Map<String, String>> list = courseDAO.infoList(c);
         if (list == null || list.size() == 0) return 0x020101;
         return Integer.parseInt(list.get(list.size() - 1).get("cid"));
     }
@@ -79,6 +79,61 @@ public class CourseServiceImplement extends CourseService {
         return courseDAO.modify(new CourseBean(cid, title, teacher_id, pic_url, content)) == -1 ? 0x020301 : 0x020300;
     }
 
+    public JsonObject doCourseInfo() {
+        if (jsonObject.has("cid"))
+            return getCourseInfo();
+        if (jsonObject.has("tid"))
+            return myCourse();
+        if (jsonObject.has("uid"))
+            return myCourseTable();
+        return getCourseList();
+    }
+
+    public JsonObject myCourse() {
+        String cid = jsonObject.get("tid").getAsString();
+        CourseBean course = new CourseBean();
+        course.setTeacher_uid(cid);
+        List<Map<String, String>> list = courseDAO.infoList(course);
+
+        JsonObject jsonObject = new JsonObject();
+
+        if (list == null) return jsonObject;
+
+        Map<String, String> map;
+        for (int i = 0; i < list.size(); i++) {
+            map = list.get(i);
+            JsonObject j = new JsonObject();
+            j.addProperty("cid", map.get("cid"));
+            j.addProperty("title", map.get("title"));
+            j.addProperty("teacher_id", map.get("teacher_id"));
+            j.addProperty("pic_url", map.get("pic_url"));
+            j.addProperty("content", map.get("content"));
+            jsonObject.add(i + "", j);
+        }
+
+        return jsonObject;
+    }
+
+    public JsonObject myCourseTable() {
+
+        List<Map<String, String>> list = courseDAO.infoList(jsonObject.get("uid").getAsString());
+
+        JsonObject jsonObject = new JsonObject();
+
+        if (list == null) return jsonObject;
+
+        Map<String, String> map;
+        for (int i = 0; i < list.size(); i++) {
+            map = list.get(i);
+            JsonObject j = new JsonObject();
+            j.addProperty("cid", map.get("cid"));
+            j.addProperty("title", map.get("title"));
+            jsonObject.add(i + "", j);
+        }
+
+        return jsonObject;
+    }
+
     @Override
     public JsonObject getCourseInfo() {
         String cid = jsonObject.get("cid").getAsString();
@@ -101,12 +156,20 @@ public class CourseServiceImplement extends CourseService {
         return jsonObject;
     }
 
+    //匹配查找
     public JsonObject getCourseList() {
-        String cid = jsonObject.get("cid").getAsString();
-        CourseBean course = new CourseBean();
-        course.setCid(cid);
-        List<Map<String, String>> list = courseDAO.infoList(course);
-
+        String content = "", name = "", title = "";
+        if (jsonObject.has("content"))
+            content = jsonObject.get("content").getAsString();
+        if (jsonObject.has("name"))
+            name = jsonObject.get("name").getAsString();
+        if (jsonObject.has("title"))
+            title = jsonObject.get("title").getAsString();
+        List<Map<String, String>> list;
+        if (jsonObject.get("order").getAsString().equals("hot"))
+            list = courseDAO.infoListHot(title, content, name, jsonObject.get("choose").getAsString());
+        else
+            list = courseDAO.infoList(title, content, name, jsonObject.get("choose").getAsString());
         JsonObject jsonObject = new JsonObject();
 
         if (list == null) return jsonObject;
@@ -116,7 +179,7 @@ public class CourseServiceImplement extends CourseService {
             JsonObject j = new JsonObject();
             j.addProperty("cid", map.get("cid"));
             j.addProperty("title", map.get("title"));
-            j.addProperty("teacher_id", map.get("teacher_id"));
+            j.addProperty("nickname", map.get("nickname"));
             j.addProperty("pic_url", map.get("pic_url"));
             j.addProperty("content", map.get("content"));
             jsonObject.add(i + "", j);
@@ -312,7 +375,7 @@ public class CourseServiceImplement extends CourseService {
 
     @Override
     public int createAnswer() {
-        String hid = jsonObject.get("cid").getAsString();
+        String hid = jsonObject.get("hid").getAsString();
         String uid = jsonObject.get("uid").getAsString();
         String content = jsonObject.get("content").getAsString();
 
@@ -580,7 +643,7 @@ public class CourseServiceImplement extends CourseService {
             else
                 return deleteCourse();
         } else
-            return deleteCourse();
+            return createCourse();
     }
 
     public JsonObject doAnswer() {
@@ -593,5 +656,4 @@ public class CourseServiceImplement extends CourseService {
             return getAnswerInfo();
         return null;
     }
-
 }

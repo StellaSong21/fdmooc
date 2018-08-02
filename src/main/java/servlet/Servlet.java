@@ -55,7 +55,8 @@ public class Servlet extends HttpServlet {
                 pw.print(ServiceFactory.getDiscussionInstance(param).append());
                 break;
             case "courseinfo":
-                pw.print(ServiceFactory.getCourseServiceInstance(param).getCourseInfo());
+                System.out.println(ServiceFactory.getCourseServiceInstance(param).doCourseInfo());
+                pw.print(ServiceFactory.getCourseServiceInstance(param).doCourseInfo());
                 break;
             case "resourcelist":
                 pw.print(ServiceFactory.getCourseServiceInstance(param).getResourceInfo());
@@ -101,6 +102,9 @@ public class Servlet extends HttpServlet {
                 break;
             case "answer":
                 pw.print(ServiceFactory.getCourseServiceInstance(param).doAnswer());
+                break;
+            case "add_course":
+                pw.print(ServiceFactory.getCourseServiceInstance(param).createCourse());
                 break;
         }
         pw.flush();

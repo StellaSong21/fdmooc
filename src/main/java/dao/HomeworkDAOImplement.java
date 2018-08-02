@@ -104,7 +104,7 @@ public class HomeworkDAOImplement implements HomeworkDAO {
                 match += "AND cid='" + homeworkBean.getCid() + "' ";
 
             if (!match.isEmpty())
-                sql += "WHERE " + match.substring(3);
+                sql += " WHERE " + match.substring(3);
 
             PreparedStatement ps = conn.prepareStatement(sql);
             ResultSet re = ps.executeQuery();

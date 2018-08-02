@@ -13,4 +13,10 @@ public interface CourseDAO {
     int modify(CourseBean courseBean);
 
     List<Map<String, String>> infoList(CourseBean courseBean);
+
+    List<Map<String, String>> infoList(String uid);
+
+    List<Map<String, String>> infoList(String title, String content, String name, String c);
+
+    List<Map<String, String>> infoListHot(String title, String content, String name, String c);
 }
